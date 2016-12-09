@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webascrazy</title>
+    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
+    <description>Recent content on Webascrazy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Dec 2016 12:44:38 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>what every developer should know series</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/12/09/what-every-developer-should-know-series/</link>
+      <pubDate>Fri, 09 Dec 2016 12:44:38 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/12/09/what-every-developer-should-know-series/</guid>
+      <description>&lt;p&gt;Series for developers regardless from the programming language they are using.
+Usually from beginner to medium level.&lt;/p&gt;
+
+&lt;p&gt;Something I would share with developers that I would like to work with so we can express our ideas using the same language.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;networks&lt;/li&gt;
+&lt;li&gt;ip addresses&lt;/li&gt;
+&lt;li&gt;caching&lt;/li&gt;
+&lt;li&gt;bits, bytes, encoding
+
+&lt;ul&gt;
+&lt;li&gt;resource: &lt;a href=&#34;http://kunststube.net/encoding/&#34;&gt;http://kunststube.net/encoding/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;using git&lt;/li&gt;
+&lt;li&gt;main principles of scalable infrastructure&lt;/li&gt;
+&lt;li&gt;data structures&lt;/li&gt;
+&lt;li&gt;searching algorithms?&lt;/li&gt;
+&lt;li&gt;big o notation&lt;/li&gt;
+&lt;li&gt;web security
+
+&lt;ul&gt;
+&lt;li&gt;db configuration&lt;/li&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;li&gt;server configuration&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;differences in programming languages&lt;/li&gt;
+&lt;li&gt;approach: proper tool for the job + proper skillset for the job&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collection of articles that opened my eyes as a web developer.</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/12/09/collection-of-articles-that-opened-my-eyes-as-a-web-developer./</link>
+      <pubDate>Fri, 09 Dec 2016 12:43:18 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/12/09/collection-of-articles-that-opened-my-eyes-as-a-web-developer./</guid>
+      <description>
+
+&lt;p&gt;Resources that changed the way I think about web development, and that (I feel), instantly made me a better programmer.&lt;/p&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;h3 id=&#34;caching&#34;&gt;Caching&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mnot.net/cache_docs/&#34;&gt;https://www.mnot.net/cache_docs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cooperation&#34;&gt;Cooperation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;http://nvie.com/posts/a-successful-git-branching-model/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>binary operations in programming languages</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/12/09/binary-operations-in-programming-languages/</link>
+      <pubDate>Fri, 09 Dec 2016 12:37:42 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/12/09/binary-operations-in-programming-languages/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/28432398/difference-between-some-operators-golang&#34;&gt;http://stackoverflow.com/questions/28432398/difference-between-some-operators-golang&lt;/a&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts&#34;&gt;https://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>And what will happen now</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/12/08/and-what-will-happen-now/</link>
+      <pubDate>Thu, 08 Dec 2016 19:46:41 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/12/08/and-what-will-happen-now/</guid>
+      <description>&lt;p&gt;This is not empty any more
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>http://replace-this-with-your-hugo-site.com/page/projects.html</link>
+      <pubDate>Thu, 08 Dec 2016 19:25:18 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/page/projects.html</guid>
+      <description>&lt;p&gt;And this is a list of my projects
+    * first
+    * second
+    * third&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about me</title>
+      <link>http://replace-this-with-your-hugo-site.com/page/about-me.html</link>
+      <pubDate>Thu, 08 Dec 2016 19:18:45 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/page/about-me.html</guid>
+      <description>&lt;p&gt;This is a page about me - will be a copy of current webascrazy&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>welcome</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/12/08/welcome/</link>
+      <pubDate>Thu, 08 Dec 2016 18:58:22 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/12/08/welcome/</guid>
+      <description>&lt;p&gt;This is really my first working post on Hugo!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

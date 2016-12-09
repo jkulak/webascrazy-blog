@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/index.html</loc>
+    <lastmod>2016-12-09T12:44:38-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/12/09/what-every-developer-should-know-series/</loc>
+    <lastmod>2016-12-09T12:44:38-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/12/09/collection-of-articles-that-opened-my-eyes-as-a-web-developer./</loc>
+    <lastmod>2016-12-09T12:43:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/12/09/binary-operations-in-programming-languages/</loc>
+    <lastmod>2016-12-09T12:37:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/12/08/and-what-will-happen-now/</loc>
+    <lastmod>2016-12-08T19:46:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/page/projects.html</loc>
+    <lastmod>2016-12-08T19:25:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/page/about-me.html</loc>
+    <lastmod>2016-12-08T19:18:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/12/08/welcome/</loc>
+    <lastmod>2016-12-08T18:58:22-06:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,43 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "Webascrazy"
+languageCode = "en-us"
+theme = "ghostwriter"
+disqusShortname = "webascrazy"
+googleAnalytics = "UA-1856754-1"
+uglyURLs = true
+
+[Author]
+    name = "Jakub Kułak"
+    # profile = "https://google.com/+XXX"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    headline = "Webascrazy blog"
+    description = "technology, programming languages, networks and working with people"
+    github = "https://github.com/jkulak"
+    linkedin = "https://linkedin.com/in/jakubkulak/"
+    gplus = "https://plus.google.com/117611095722064018816"
+    twitter = "https://twitter.com/jakub_kulak"
+    stackoverflow = "https://stackoverflow.com/users/576372/jkulak"
+    opengraph = true
+
+[Permalinks]
+    post = "/:year/:month/:day/:title/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Projects"
+    url = "/page/projects.html"
+    weight = 2
+
+[[menu.main]]
+    name = "About me"
+    url = "/page/about-me.html"
+    weight = 3
