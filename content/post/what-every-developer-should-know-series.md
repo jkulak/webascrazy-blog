@@ -14,7 +14,9 @@ Usually from beginner to medium level.
 Something I would share with developers that I would like to work with so we can express our ideas using the same language.
 
 - networks
+    - tpc/udp (Transmission Control Protocol and User Datagram Protocol)
 - ip addresses
+- ssh/tls/https/sftp
 - caching
 - bits, bytes, encoding
     - resource: http://kunststube.net/encoding/
