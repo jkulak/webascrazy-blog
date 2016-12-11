@@ -5,6 +5,7 @@ tags = [
 ]
 date = "2016-12-09T12:44:38-06:00"
 title = "what every developer should know series"
+draft = true
 
 +++
 

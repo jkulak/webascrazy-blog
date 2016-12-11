@@ -5,6 +5,7 @@ author = ""
 tags = ["test", "technology", "private"
 ]
 date = "2016-12-08T19:46:41-06:00"
+draft = true
 
 +++
 This is not empty any more
