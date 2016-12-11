@@ -10,12 +10,22 @@
     <atom:link href="http://webascrazy.net/post.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>welcome</title>
-      <link>http://webascrazy.net/2016/12/08/welcome/</link>
+      <title>Welcome to the new Webascrazy.net</title>
+      <link>http://webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</link>
       <pubDate>Thu, 08 Dec 2016 18:58:22 -0600</pubDate>
       
-      <guid>http://webascrazy.net/2016/12/08/welcome/</guid>
-      <description>&lt;p&gt;This is really my first working post on Hugo!&lt;/p&gt;
+      <guid>http://webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</guid>
+      <description>&lt;p&gt;Welcome to the new version of webascrazy.net!&lt;/p&gt;
+
+&lt;p&gt;After I started learning &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; earlier this year, I started exploring different tools built using Go. On of them was &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; a &amp;ldquo;Static Website Engine&amp;rdquo;. I decided to give it a try, review its source code - and hopefully soon, also contribute my changes.&lt;/p&gt;
+
+&lt;p&gt;This blog is my first blog set up using a static website generator. It is hosted using &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After several blogs I have started, using Wordpress, Drupal, Blogger.com, Evernote + postach.io, I feel that using a static website generator is like having everything under control. I am a developer, and I using markdown feel super natural, and I don&amp;rsquo;t have to leave my cave (Atom + iTerm apps on OSX) to write and publish the articles. It is simple, fast and you can influence every single aspect of it (like building a vanilla html + css website - but faster).&lt;/p&gt;
+
+&lt;p&gt;I will be publishing at least 1 article per week in 2017 - that is one of the new year&amp;rsquo;s resolutions!&lt;/p&gt;
+
+&lt;p&gt;The previous version is still available here: &lt;a href=&#34;http://v1.webascrazy.net&#34;&gt;http://v1.webascrazy.net&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

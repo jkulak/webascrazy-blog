@@ -2,35 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webascrazy</title>
-    <link>http://webascrazy.net/index.xml</link>
+    <link>http://webascrazy.net/tags.xml</link>
     <description>Recent content on Webascrazy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2016 19:25:18 -0600</lastBuildDate>
-    <atom:link href="http://webascrazy.net/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>projects</title>
-      <link>http://webascrazy.net/page/projects.html</link>
-      <pubDate>Thu, 08 Dec 2016 19:25:18 -0600</pubDate>
-      
-      <guid>http://webascrazy.net/page/projects.html</guid>
-      <description>&lt;p&gt;And this is a list of my projects
-    * first
-    * second
-    * third&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>about me</title>
-      <link>http://webascrazy.net/page/about-me.html</link>
-      <pubDate>Thu, 08 Dec 2016 19:18:45 -0600</pubDate>
-      
-      <guid>http://webascrazy.net/page/about-me.html</guid>
-      <description>&lt;p&gt;This is a page about me - will be a copy of current webascrazy&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="http://webascrazy.net/tags.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Welcome to the new Webascrazy.net</title>
@@ -44,7 +20,7 @@
 
 &lt;p&gt;This blog is my first blog set up using a static website generator. It is hosted using &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;After several blogs I have started, using Wordpress, Drupal, Blogger.com, Evernote + postach.io, I feel that using a static website generator is like having everything under control. I am a developer, and I using markdown feel super natural, and I don&amp;rsquo;t have to leave my cave (Atom + iTerm apps on OSX) to write and publish the articles. It is simple, fast and you can influence every single aspect of it (like building a vanilla html + css website - but faster).&lt;/p&gt;
+&lt;p&gt;After several blogs I have started, using Wordpress, Drupal, Blogger.com, Evernote + postach.io, I feel that using a static website generator is like having everything under control. I am a developer, and I using markdown feel super natural, and I don&amp;rsquo;t have to leave my cave (Atom + iTerm apps on OSX) to write and publish the articles. It is simple, fast and you can influence every single aspect of it (like building a vanlla html + css website - but faster).&lt;/p&gt;
 
 &lt;p&gt;I will be publishing at least 1 article per week in 2017 - that is one of the new year&amp;rsquo;s resolutions!&lt;/p&gt;
 

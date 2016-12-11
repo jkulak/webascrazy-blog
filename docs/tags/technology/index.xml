@@ -18,15 +18,5 @@
 </description>
     </item>
     
-    <item>
-      <title>welcome</title>
-      <link>http://webascrazy.net/2016/12/08/welcome/</link>
-      <pubDate>Thu, 08 Dec 2016 18:58:22 -0600</pubDate>
-      
-      <guid>http://webascrazy.net/2016/12/08/welcome/</guid>
-      <description>&lt;p&gt;This is really my first working post on Hugo!&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
