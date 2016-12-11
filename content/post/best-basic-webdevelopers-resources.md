@@ -18,4 +18,6 @@ Resources that changed the way I think about web development, and that (I feel),
 
 ## Cooperation
 
+### Source code
+
 - http://nvie.com/posts/a-successful-git-branching-model/
