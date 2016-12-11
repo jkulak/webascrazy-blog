@@ -5,6 +5,7 @@ theme = "ghostwriter"
 disqusShortname = "webascrazy"
 googleAnalytics = "UA-1856754-1"
 uglyURLs = true
+publishdir = "docs"
 
 [Author]
     name = "Jakub Kułak"
