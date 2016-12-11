@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page-rsses on Webascrazy</title>
-    <link>http://replace-this-with-your-hugo-site.com/page.xml</link>
+    <link>http://webascrazy.net/page.xml</link>
     <description>Recent content in Page-rsses on Webascrazy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Dec 2016 19:25:18 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/page.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://webascrazy.net/page.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>projects</title>
-      <link>http://replace-this-with-your-hugo-site.com/page/projects.html</link>
+      <link>http://webascrazy.net/page/projects.html</link>
       <pubDate>Thu, 08 Dec 2016 19:25:18 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/page/projects.html</guid>
+      <guid>http://webascrazy.net/page/projects.html</guid>
       <description>&lt;p&gt;And this is a list of my projects
     * first
     * second
@@ -24,10 +24,10 @@
     
     <item>
       <title>about me</title>
-      <link>http://replace-this-with-your-hugo-site.com/page/about-me.html</link>
+      <link>http://webascrazy.net/page/about-me.html</link>
       <pubDate>Thu, 08 Dec 2016 19:18:45 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/page/about-me.html</guid>
+      <guid>http://webascrazy.net/page/about-me.html</guid>
       <description>&lt;p&gt;This is a page about me - will be a copy of current webascrazy&lt;/p&gt;
 </description>
     </item>
