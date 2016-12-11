@@ -21,8 +21,13 @@ Usually from beginner to medium level.&lt;/p&gt;
 &lt;p&gt;Something I would share with developers that I would like to work with so we can express our ideas using the same language.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;networks&lt;/li&gt;
+&lt;li&gt;networks
+
+&lt;ul&gt;
+&lt;li&gt;tpc/udp (Transmission Control Protocol and User Datagram Protocol)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;ip addresses&lt;/li&gt;
+&lt;li&gt;ssh/tls/https/sftp&lt;/li&gt;
 &lt;li&gt;caching&lt;/li&gt;
 &lt;li&gt;bits, bytes, encoding
 
