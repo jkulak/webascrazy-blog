@@ -10,7 +10,7 @@ date = "2016-12-08T19:18:45-06:00"
 
 ## About me
 
-{{< figure src="/jkulak.jpg" title="Jakub enjoying the sun" >}}
+{{< figure src="/jkulak.jpg" alt="Jakub enjoying the sun" >}}
 
 My name is Jakub Kułak, I am a technologist, developer, manager and a team player. I have moved to Mexico City recently and I am looking for challenges here as a manager/architect/software engineer.
 
