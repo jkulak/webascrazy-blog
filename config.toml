@@ -13,8 +13,6 @@ publishdir = "docs"
 
 [Taxonomies]
     tag = "tags"
-    category = "categories"
-    series = "series"
 
 [Params]
     intro = true
@@ -35,10 +33,10 @@ publishdir = "docs"
     url = "/"
     weight = 1
 
-[[menu.main]]
-    name = "Projects"
-    url = "/page/projects.html"
-    weight = 2
+# [[menu.main]]
+#     name = "Projects"
+#     url = "/page/projects.html"
+#     weight = 2
 
 [[menu.main]]
     name = "About me"
