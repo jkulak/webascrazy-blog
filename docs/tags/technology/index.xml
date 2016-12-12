@@ -14,7 +14,35 @@
       <pubDate>Thu, 08 Dec 2016 19:18:45 -0600</pubDate>
       
       <guid>http://webascrazy.net/page/about-me.html</guid>
-      <description>&lt;p&gt;This is a page about me - will be a copy of current webascrazy&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
+
+&lt;p&gt;My name is Jakub Kułak, I am a technologist, developer, manager and a team player. I have moved to Mexico City recently and I am looking for challenges here as a manager/architect/software engineer.&lt;/p&gt;
+
+&lt;p&gt;I have been working for multiple media, communication and financial businesses over the last 12 years, managing teams of developers, building up and transforming the company culture, implementing modern methodologies, tools and practices.&lt;/p&gt;
+
+&lt;p&gt;Over the last years I have been responsible for big projects that included building content websites, community platforms, highly performant RESTful APIs, internal and external tools, data and content management systems.&lt;/p&gt;
+
+&lt;p&gt;Best way to get to know me better is to &lt;a href=&#34;https://twitter.com/jakub_kulak&#34;&gt;follow me on Twitter&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&#34;general-skills&#34;&gt;General skills&lt;/h2&gt;
+
+&lt;p&gt;My specialities are: team building, talent development, technology vision, highly scalable systems, web architecture, startups, lean startup and agile methodologies, modern approach to development and operations.&lt;/p&gt;
+
+&lt;p&gt;I am a Polish native speaker, fluent in English and after four years in Hamburg/Germany, speaking good German. I&amp;rsquo;ve been intensively learning Spanish since February 2016.&lt;/p&gt;
+
+&lt;p&gt;I am a big fan of automatization. CD, CI and automated server provisioning. Recently most of the work I did for my private project was related to Chef and Docker server provisioning - see &lt;a href=&#34;https://github.com/jkulak&#34;&gt;my GitHub&lt;/a&gt; repositories for more details.&lt;/p&gt;
+
+&lt;p&gt;I like to measure, analyze, learn and repeat.&lt;/p&gt;
+
+&lt;h2 id=&#34;contact-information&#34;&gt;Contact information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jakub Kułak, located in CDMX, Mexico&lt;/li&gt;
+&lt;li&gt;Email: jakub.kulak@gmail.com&lt;/li&gt;
+&lt;li&gt;Phone: +52 (55) 7380 5082 (Mexico)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
