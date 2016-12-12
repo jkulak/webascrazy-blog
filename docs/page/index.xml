@@ -32,6 +32,20 @@
 
 &lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
 
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://webascrazy.net/jkulak.jpg&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Jakub enjoying the sun&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
 &lt;p&gt;My name is Jakub Kułak, I am a technologist, developer, manager and a team player. I have moved to Mexico City recently and I am looking for challenges here as a manager/architect/software engineer.&lt;/p&gt;
 
 &lt;p&gt;I have been working for multiple media, communication and financial businesses over the last 12 years, managing teams of developers, building up and transforming the company culture, implementing modern methodologies, tools and practices.&lt;/p&gt;
