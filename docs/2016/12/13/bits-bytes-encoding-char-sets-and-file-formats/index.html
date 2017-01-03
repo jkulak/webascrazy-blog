@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bits, bytes, encoding, char sets and file formats &middot; Jakub Kułak</title>
+        <meta name="description" content="Bits, bytes, char sets, encoding, file formats To full understand the concepts of storing data and encoding, we will use the sequence of bytes, and step by step transform it to see what kind of data it stores.
+Let&rsquo;s start from bottom, and move up to be able to understand all the concepts step by step.
+Storing bits and bytes, raw data  Data (either in memory or files on a drive) is stored as a sequence of bits (0s and 1s) - this is the sequence we will use in all next examples: 111011111011101110111111010101100110111101101001011011001100001 110100000001000001111000010011111000000100100001010010000001010">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.17" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Bits, bytes, encoding, char sets and file formats">
+<meta property="og:description" content="Bits, bytes, char sets, encoding, file formats To full understand the concepts of storing data and encoding, we will use the sequence of bytes, and step by step transform it to see what kind of data it stores.
+Let&rsquo;s start from bottom, and move up to be able to understand all the concepts step by step.
+Storing bits and bytes, raw data  Data (either in memory or files on a drive) is stored as a sequence of bits (0s and 1s) - this is the sequence we will use in all next examples: 111011111011101110111111010101100110111101101001011011001100001 110100000001000001111000010011111000000100100001010010000001010">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/">
+        <link rel="stylesheet" href="http://webascrazy.net/css/normalize.css">
+        <link rel="stylesheet" href="http://webascrazy.net/css/highlight.css">
+        <link rel="stylesheet" href="http://webascrazy.net/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1856754-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Webascrazy" href="http://webascrazy.net/">Webascrazy</a>
+                            </h1>
+                        
+                        <a class="button-square" href="http://webascrazy.net/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/jakub_kulak">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/jkulak">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/576372/jkulak">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/jakubkulak/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="https://plus.google.com/117611095722064018816">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About me" href="/page/about-me.html">About me</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Bits, bytes, encoding, char sets and file formats</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2016-12-13" itemprop="datePublished">Tue, Dec 13, 2016</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="" itemprop="url" rel="author">Jakub Kułak</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h1 id="bits-bytes-char-sets-encoding-file-formats">Bits, bytes, char sets, encoding, file formats</h1>
+
+<p>To full understand the concepts of storing data and encoding, we will use the sequence of bytes, and step by step transform it to see what kind of data it stores.</p>
+
+<p>Let&rsquo;s start from bottom, and move up to be able to understand all the concepts step by step.</p>
+
+<h2 id="storing-bits-and-bytes-raw-data">Storing bits and bytes, raw data</h2>
+
+<ol>
+<li><p>Data (either in memory or files on a drive) is stored as a sequence of bits (0s and 1s) - this is the sequence we will use in all next examples:
+<code>111011111011101110111111010101100110111101101001011011001100001 110100000001000001111000010011111000000100100001010010000001010</code></p></li>
+
+<li><p>Since every 8 bits make a byte (this is for the <a href="https://www.quora.com/Why-it-is-that-1-Byte-is-equal-to-8-Bits">historical reason</a>), we can say that files are stored as a sequence of bytes:
+<code>11101111 10111011 10111111 01010110 01101111 01101001 01101100 11000011 10100000 00100000 11110000 10011111 10010000 10100100 00001010</code></p></li>
+
+<li><p>Bytes can be represented in different <a href="https://en.wikipedia.org/wiki/Numeral_system">numeral systems</a> (this is purely for presentational purposes - because it is easier for us, humans, to distinguish decimal and hexadecimal values that binary values)</p>
+
+<ul>
+<li><p>binary (0, 1), min byte value: 00000000, max byte value: 11111111 (like seen above)</p></li>
+
+<li><p>decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9), min byte value: 0, max byte value: 255
+<code>239 187 191 86 111 105 108 195 160 32 240 159 144 164 10</code> - you will not see that too often - it&rsquo;s just for explanation purposes here</p></li>
+
+<li><p>hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f), min byte value: 0, max byte value: ff (we add the preceding 0 for values smaller than 10 for readability)
+<code>ef bb bf 56 6f 69 6c c3 a0 20 f0 9f 90 a4 0a</code> - to distinguish hexadecimal notation, often <code>0x</code> is added in front the values, therefor it becomes <code>0xefbbbf 0x566f69 0x6cc3a0 0x20f09f 0x90a40a</code> (after grouping some bytes together)</p></li>
+</ul></li>
+</ol>
+
+<p>By looking at those bytes - we are not yet able to tell anything about the data that is being stored - if it is an image, json file or a PDF file. Although, if you are familiar with encoding already, the first three bytes: <code>0xefbbbf</code> might give you a clue.</p>
+
+<h2 id="character-encoding">Character encoding</h2>
+
+<p>Character encoding is an algorithm that translates a list of characters (which can be letters, symbols, emoji) to binary code, so it can be stored on disk.</p>
+
+<p>There are plenty of character encodings. The most popular in 2016 for websites, are:</p>
+
+<ul>
+<li>UTF-8 (88.1%)</li>
+<li>ISO-8859-1 (5.5%)</li>
+<li>Windows-1251 (1,7%)</li>
+<li>Shift JIS (1,1%)</li>
+</ul>
+
+<h3 id="ascii">ASCII</h3>
+
+<p>It is a 7-bit code for coding characters in computers and generally in all communication devices that use text. 7-bit (0b0000000–0b1111111) means it can represent 128 characters, from which, some of them are not visible (control characters). Complete list with codes can be found here: <a href="http://www.columbia.edu/kermit/ascii.html">http://www.columbia.edu/kermit/ascii.html</a></p>
+
+<h3 id="iso-8859">ISO-8859</h3>
+
+<p>It is a set of 8-bit single-byte coded character encoding schemes. 8-bit (0b00000000–0b11111111) means that each of the encodings from ISO-8859 can represent 255 characters, from which some of them are not visible (control characters). For backward compatibility first 128 characters have same codes as in ASCII. Rest of the codes are assign to language specific characters, depending on ISO-8859 part.</p>
+
+<h3 id="iso-8859-2">ISO-8859–2</h3>
+
+<p>Part 2 of ISO-8859 character encoding (also referred as Latin-2). Created to be used with Central European languages like Bosnian, Polish, Croatian, Czech, Slovak, Slovene and some else. First 128 characters are same as ASCII codes.</p>
+
+<h3 id="windows-1250">Windows-1250</h3>
+
+<p>It is MS Windows 8-bit character encoding for Central European languages. It has many of the same characters as ISO-8895–2 but in a different arrangement, which leads to some confusions.</p>
+
+<h3 id="utf-8">UTF-8</h3>
+
+<p>UTF-8 is a 8-bit variable-length character encoding for Unicode. This means that one character is represented by 1 to 4 bytes, so UTF-8 contains way more characters than ISO-8895 and other local charsets. Unlike UTF-16 and UTF-32, UTF-8 is backward compatible with ASCII (first 128 characters are the same) — this is one of the reasons UTF-8 got most popular from among unicode encodings.</p>
+
+<h2 id="guessing-the-file-encoding">Guessing the file encoding</h2>
+
+<p>There is no universal way to tell the file (sequence of bytes) encoding. Different applications, make a guess based on several rules, example of detection: <a href="https://github.com/aadsm/jschardet/blob/master/src/universaldetector.js#L75-L100">https://github.com/aadsm/jschardet/blob/master/src/universaldetector.js#L75-L100</a>.</p>
+
+<p>The best shot is the <a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM</a>, byte order mark, that might be present as the first bytes in the file.</p>
+
+<p>By looking at our sequence <code>0xefbbbf 0x566f69 0x6cc3a0 0x20f09f 0x90a40a</code> we can see, that the first three bytes are actually a BOM for UTF-8 encoding <code>0xef 0xbb 0xbf</code>.</p>
+
+<p>Let&rsquo;s try to save those bytes into a file and see what comes up (we use <code>\x</code> to be able to use hexadecimal values):</p>
+
+<pre><code>$ echo -n -e '\xef\xbb\xbf\x56\x6f\x69\x6c\xc3\xa0\x20\xf0\x9f\x90\xa4\x0a' &gt; testfile
+</code></pre>
+
+<p>Now, running <code>$ cat testfile</code> might give you different results, depending on which encoding is used by your terminal. You might get gibberish like <code>ï»¿VoilÃ  ğ¤</code> or something more meaningful when you use UTF-8 - see for yourself.</p>
+
+<p>Removing the three first bytes from our sequence (UTF-8 BOM), would still give good results when displaying the content of the file using UTF-8, but would not display correctly using different encoding (here we use <code>iconv</code> to view the content of the file using selected encoding):</p>
+
+<pre><code>$ iconv -t utf-16be testfile
+</code></pre>
+
+<h3 id="bom">BOM</h3>
+
+<p>Byte Order Mark is a character (can be 2-5 bytes long) that placed at the start of a text stream (sequence of bytes) can signal several things to a reader of the stream, like</p>
+
+<ul>
+<li>which of the Unicode character encodings is used to encode the stream</li>
+<li>byte order (endianness: little-endian (LE) or big-endian (BE))</li>
+</ul>
+
+<pre><code>🐥 :~ $ iconv -t utf-16be testfile | xxd
+0000000: 0056 006f 0069 006c 00e0 0020 d83d dc24  .V.o.i.l... .=.$
+0000010: 000a                                     ..
+🐥 :~ $ xxd testfile
+0000000: 566f 696c c3a0 20f0 9f90 a40a            Voil.. .....
+🐥 :~ $iconv -t utf-16le testfile | xxd
+0000000: 5600 6f00 6900 6c00 e000 2000 3dd8 24dc  V.o.i.l... .=.$.
+0000010: 0a00
+</code></pre>
+
+<h2 id="character-sets">Character sets</h2>
+
+<p>A character set is a list of characters with unique numbers (these numbers are sometimes referred to as &ldquo;code points&rdquo;). Unicode is the most popular example of a character set (that can be encoded using different character encodings, like UTF-7, UTF-8, UTF-16BE, UTF-32 and others).</p>
+
+<h3 id="unicode">Unicode</h3>
+
+<p>Unicode is a standard for consistent representation and handling of text expressed in most of the world’s writing systems (e-mails, files, websites). Despite graphical representation it handles related items, such as character properties, rules for normalization, decomposition, collation, rendering, and bidirectional display order (for the correct display of text containing both right-to-left scripts, such as Arabic or Hebrew, and left-to-right scripts).</p>
+
+<h2 id="useful-commands">Useful commands</h2>
+
+<ol>
+<li>View file content in hexadecimal format : <code>$ xxd testfile</code></li>
+<li>View file content in binary format: <code>$ xxd -b testfile</code></li>
+<li>Write bytes to file: <code>$ echo -n -e '\xEF\xBB\xBF\xf0\x9f\x98\x80' &gt; smiley_face</code></li>
+<li>See the list of iconv supported encodings: <code>$ iconv -l</code></li>
+<li>Try to guess file encoding: <code>$ file -I testfile</code> (osx), <code>$ file -i testfile</code> (linux). For better detection, consider using <a href="https://linux.die.net/man/1/enconv">https://linux.die.net/man/1/enconv</a></li>
+</ol>
+
+<h1 id="notes">Notes</h1>
+
+<p>In browser JavaScript console</p>
+
+<pre><code>var out = &quot;&quot;
+&quot;11101111 10111011 10111111 01010110 01101111 01101001 01101100 11000011 10100000 00100000 11110000 10011111 10010000 10100100 00001010&quot;.split(&quot; &quot;).forEach(function(elem) {
+out += parseInt(elem, 2) + &quot; &quot;
+})
+console.log(out)
+</code></pre>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="https://twitter.com/share?text=Bits%2c%20bytes%2c%20encoding%2c%20char%20sets%20and%20file%20formats&url=http%3a%2f%2fwebascrazy.net%2f2016%2f12%2f13%2fbits-bytes-encoding-char-sets-and-file-formats%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwebascrazy.net%2f2016%2f12%2f13%2fbits-bytes-encoding-char-sets-and-file-formats%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fwebascrazy.net%2f2016%2f12%2f13%2fbits-bytes-encoding-char-sets-and-file-formats%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'webascrazy';
+    var disqus_identifier = 'http:\/\/webascrazy.net\/2016\/12\/13\/bits-bytes-encoding-char-sets-and-file-formats\/';
+    var disqus_title = 'Bits, bytes, encoding, char sets and file formats';
+    var disqus_url = 'http:\/\/webascrazy.net\/2016\/12\/13\/bits-bytes-encoding-char-sets-and-file-formats\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Webascrazy" href="http://webascrazy.net/">Webascrazy</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2016 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="http://webascrazy.net/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="http://webascrazy.net/js/jquery.fitvids.js"></script>
+        <script src="http://webascrazy.net/js/scripts.js"></script>
+    </body>
+</html>
+
