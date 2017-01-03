@@ -119,7 +119,6 @@ Unicode is a standard for consistent representation and handling of text express
 
 # Notes
 
-
 In browser JavaScript console
 ```
 var out = ""

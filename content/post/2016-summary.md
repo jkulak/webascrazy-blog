@@ -1,11 +1,10 @@
 +++
 tags = [
 ]
-date = "2016-12-28T15:02:32-06:00"
+date = "2016-12-31T15:02:32-06:00"
 title = "Summary of my 2016"
 description = ""
 author = "Jakub Kułak"
-draft = true
 +++
 
 ## tl;dr
