@@ -21,3 +21,6 @@ Resources that changed the way I think about web development, and that (I feel),
 ### Source code
 
 - http://nvie.com/posts/a-successful-git-branching-model/
+
+## Inheritance in JavaScript
+- https://blog.liip.ch/archive/2014/10/09/why-i-dont-use-the-javascript-new-keyword.html
