@@ -32,6 +32,6 @@ I like to measure, analyze, learn and repeat.
 
 ## Contact information
 
-* Jakub Kułak, located in CDMX, Mexico
+* Jakub Kułak, located in Warsaw, Poland
 * Email: jakub.kulak@gmail.com
-* Phone: +52 (55) 7380 5082 (Mexico)
+* Phone: +48 799 023 375
