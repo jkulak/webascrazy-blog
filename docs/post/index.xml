@@ -85,7 +85,7 @@
 &lt;li&gt;locally 💻&lt;/li&gt;
 &lt;li&gt;using Docker 🐳 (my preferred option)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Install pip&lt;/li&gt;
+&lt;li&gt;Install pip (the Python package manager)&lt;/li&gt;
 &lt;li&gt;Setting up development environment
 
 &lt;ul&gt;
@@ -100,31 +100,92 @@
 
 &lt;p&gt;To check the version of Python (or if it&amp;rsquo;s already installed) run &lt;code&gt;python --version&lt;/code&gt; in your terminal.&lt;/p&gt;
 
-&lt;p&gt;Version 3 has introduced many improvements over the previous version, but also brought many incompatibilities (see: &lt;a href=&#34;https://wiki.python.org/moin/Python2orPython3&#34;&gt;https://wiki.python.org/moin/Python2orPython3&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Version 3 has introduced many improvements over the previous version, but also brought many incompatibilities (which is often a source of many jokes). For details see here: &lt;a href=&#34;https://wiki.python.org/moin/Python2orPython3&#34;&gt;https://wiki.python.org/moin/Python2orPython3&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Unless you are working on a project that specifically requires Python version 2 - I would suggest to use the newest version, as all of the new aspects of Python 3 are the future of the language.&lt;/p&gt;
+&lt;p&gt;Unless you are working on a project that specifically requires Python version 2 - I  suggest to use the newest version, as all of the new aspects of Python 3 are the future of the language.&lt;/p&gt;
 
 &lt;h3 id=&#34;installing-updating-python-locally&#34;&gt;Installing/updating Python locally&lt;/h3&gt;
 
-&lt;p&gt;There are several option to install Python on OS X.&lt;/p&gt;
+&lt;p&gt;There are several option to install Python on OS X. My preferred way is to use Homebrew, the most popular package manager for OSX. If you ar not yet using Homebrew (nor any other package managers for OSX), install it followin the one step guide: &lt;a href=&#34;http://brew.sh/#install&#34;&gt;http://brew.sh/#install&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once installed, use Homebrew to install Python.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install python&lt;/code&gt; - to install version 2.7&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install python3&lt;/code&gt; - to install the newest 3.x version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To run Python CLI, type &lt;code&gt;python&lt;/code&gt; or &lt;code&gt;python3&lt;/code&gt; depending on the version you have installed and need.&lt;/p&gt;
 
 &lt;h3 id=&#34;creating-your-development-environment-with-docker&#34;&gt;Creating your development environment with Docker&lt;/h3&gt;
 
-&lt;p&gt;Since it happens, that I have to work on multiple projects at the same time (sometimes I have to use two different versions of the same programming language), I need to be able to switch between versions easily. That is one of the reasons I like to keep all my developments environments separate by using Docker.&lt;/p&gt;
+&lt;p&gt;Since it happens, that I have to work on multiple projects at the same time (sometimes I have to use two different versions of the same programming language), I need to be able to switch between versions easily. That is one of the reasons I like to keep all my developments environments in Docker images.&lt;/p&gt;
 
-&lt;p&gt;Docker lets you have multiple operating systems/environments enclosed in separate images.&lt;/p&gt;
+&lt;p&gt;Docker lets you have multiple operating systems/environments enclosed in separate images that are easy to build and manage.&lt;/p&gt;
 
-&lt;p&gt;There are other ways to have that separation (like virtualenv and Pyenv) - but I found Docker to be the easiest and universal.&lt;/p&gt;
+&lt;p&gt;There are other ways to separate your environments (like virtualenv and Pyenv) - but I found Docker to be the easiest and universal (works for any programming language/environment).&lt;/p&gt;
+
+&lt;p&gt;NOTE: Docker is a powerfull tool, I will not explain all the details here. If you want to learn more about Docker, head to &lt;a href=&#34;https://docs.docker.com/engine/tutorials/&#34;&gt;https://docs.docker.com/engine/tutorials/&lt;/a&gt;. Just remember - it&amp;rsquo;s easier than it seems.&lt;/p&gt;
 
 &lt;p&gt;To install Docker, head to: &lt;a href=&#34;https://docs.docker.com/docker-for-mac/&#34;&gt;https://docs.docker.com/docker-for-mac/&lt;/a&gt;. After you install and run Docker, you will be able to use &lt;code&gt;docker&lt;/code&gt; command from the terminal.&lt;/p&gt;
 
-&lt;p&gt;If you want to learn more about Docker, head to &lt;a href=&#34;https://docs.docker.com/engine/tutorials/&#34;&gt;https://docs.docker.com/engine/tutorials/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First we will create an image with an operating system and required version of Python preinstalled. To do that, create an empty &lt;code&gt;Dockerfile&lt;/code&gt; - that will store the configuration (definition) of our image.&lt;/p&gt;
 
-&lt;p&gt;First we will create an image with an operating system and required version of Python preinstalled. To do that, create a &lt;code&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First we need to choose the base Docker image we will use for our own (Docker images are composed from layers and use a base image). We colud use our favorite Linux distribution as a base image and install Python on top of that, but I would rather look for an official, popular Python image.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;docker&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Head to &lt;a href=&#34;https://store.docker.com/&#34;&gt;https://store.docker.com/&lt;/a&gt; and search for &amp;lsquo;python&amp;rsquo;. Perfect, there is a Docker Official Image for Python. It has a number of available tags, each tag is an image version with different Python version installed on different operating system (there are images using i.e. Windows, Ubuntu, etc.).&lt;/p&gt;
 
-&lt;p&gt;To see what other versions are available head to: &lt;a href=&#34;https://store.docker.com/images/1ae86987-df14-4741-9433-d9602a4da995?tab=description&#34;&gt;https://store.docker.com/images/1ae86987-df14-4741-9433-d9602a4da995?tab=description&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For my development purposes, I will go for a smallest image possible with Python 3. I have good experience with Apline Linux, so my choice is &amp;ldquo;3.6.0b2-alpine, 3.6-alpine&amp;rdquo; tag. I click it and copy the Dockerfile content to my Docker file.&lt;/p&gt;
+
+&lt;p&gt;We have the Dockerfile ready, now it&amp;rsquo;s time to build the image from that file.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker build -t jkulak/python-dev .&lt;/code&gt; - I&amp;rsquo;m tagging the image that is being built with my nickname and the name. There is a &lt;code&gt;.&lt;/code&gt; at the end of the command which means - the &lt;code&gt;Dockerfile&lt;/code&gt; is in the current directory.&lt;/p&gt;
+
+&lt;p&gt;If it finished without errors, you should be able to see you image on the list by running&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker images | grep python&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, we have a Docker image with an operating system and Python installed.&lt;/p&gt;
+
+&lt;h4 id=&#34;using-docker-image-for-python-development&#34;&gt;Using docker image for Python development&lt;/h4&gt;
+
+&lt;p&gt;To use the Docker image, we need to create a container (it is like a virtual machine on our system) from the image and connect to it.&lt;/p&gt;
+
+&lt;p&gt;It is important to know that Docker image exits (stops) as soon as the process they were runnin exits/stops.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To &amp;ldquo;go inside&amp;rdquo; the container and use the command line, run&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -ti --rm jkulak/python-dev sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I am using the &lt;code&gt;--rm&lt;/code&gt; option, so that the container is removed as soon as I finish what I was doing. Otherwise it will be created, will do what I wanted and then it will be stopped and will be available to be run again. It will be listed when you run &lt;code&gt;docker ps -a&lt;/code&gt; - that shows all the containers created and available in your system.&lt;/p&gt;
+
+&lt;p&gt;NOTE: Other option would be to tag (name) the container you are creating and then use the same one using commands &lt;code&gt;exec&lt;/code&gt; and &lt;code&gt;start&lt;/code&gt; and using the tag name you have created.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run Python CLI from using our image use&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -ti --rm jkulak/python-dev python3&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This command creates a container from our image, runs it, and runs Python inside. Did it take 0.5s, or less? Isn&amp;rsquo;t that truly amazing? 😳&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run single .py file from your local machine use&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -i --rm jkulak/python-dev python &amp;lt; hello.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run a project with multiple files using Python from the container we need to mount our project directory inside the container when running the container.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Assuming our code is in &lt;code&gt;/Users/jdoe/code&lt;/code&gt;, run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -it --rm -v /Users/jdoe/code:/src/ jkulak/python-dev python /src/hello.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;-v&lt;/code&gt; command mounts the local directory in r/w mode. Deleting things from inside th container form a mounted directory will, of coruse, remove it from your local directory.&lt;/p&gt;
 
 &lt;h2 id=&#34;code-editor&#34;&gt;Code editor&lt;/h2&gt;
 
