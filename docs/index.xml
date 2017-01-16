@@ -49,28 +49,12 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://overthewire.org/wargames/&#34;&gt;http://overthewire.org/wargames/&lt;/a&gt; - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to &lt;a href=&#34;https://www.wechall.net/&#34;&gt;https://www.wechall.net/&lt;/a&gt; to set-up an account and see your progress in several &amp;ldquo;hacking&amp;rdquo; games as well as see a huge list of other &amp;ldquo;hacking&amp;rdquo; games&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>my favorite js tools</title>
-      <link>http://webascrazy.net/2017/01/14/my-favorite-js-tools/</link>
-      <pubDate>Sat, 14 Jan 2017 16:20:43 +0100</pubDate>
-      
-      <guid>http://webascrazy.net/2017/01/14/my-favorite-js-tools/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://jsperf.com/&#34;&gt;https://jsperf.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;jsfiddle.net/&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://requestb.in/&#34;&gt;http://requestb.in/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://regex101.com/&#34;&gt;https://regex101.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jsbin.com/?html,css,js,console,output&#34;&gt;http://jsbin.com/?html,css,js,console,output&lt;/a&gt;&lt;/li&gt;
+
+&lt;h2 id=&#34;bonus&#34;&gt;Bonus&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jwasham/google-interview-university&#34;&gt;https://github.com/jwasham/google-interview-university&lt;/a&gt; - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;css bonus&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://autoprefixer.github.io/&#34;&gt;https://autoprefixer.github.io/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://caniuse.com/#feat=arrow-functions&#34;&gt;http://caniuse.com/#feat=arrow-functions&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
