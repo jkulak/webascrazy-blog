@@ -1,0 +1,26 @@
+body {
+    /*background-color: lavender;*/
+    /*text-align: justify;*/
+}
+
+ul, ol {
+    margin-bottom: 30px;
+}
+
+.post-content ul, .post-content ol {
+    line-height: 1.8;
+}
+
+.post-content ul li {
+    list-style-position: outside;
+}
+
+.post-content a {
+    border-bottom: 1px dotted #F03838;
+}
+
+code {
+    background-color: #5e5e5e;
+    color: white;
+    padding: 4px 10px;
+}
