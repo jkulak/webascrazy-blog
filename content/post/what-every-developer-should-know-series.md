@@ -1,8 +1,7 @@
 +++
 # description = "What every (web) developer should know about, the series"
 author = ""
-tags = [
-]
+tags = ["programming", "learning"]
 date = "2016-12-09T12:44:38-06:00"
 title = "What, every (web) developer should know about -- the series"
 draft = false

@@ -1,11 +1,9 @@
 +++
-tags = [
-]
+tags = ["tutorial", "python", "programming"]
 date = "2016-12-18T13:49:57-06:00"
 title = "Setting up Python development environment on mac OS X"
 description = ""
 author = ""
-
 +++
 
 ## Intro
@@ -26,7 +24,7 @@ We will go through the following steps:
 
 ## Installing/updating Python
 
-OS X 10.11 comes with Python preinstalled. On my 10.11.6 it's `Python 2.7.10 (default, Oct 23 2015, 19:19:21)`. As of the time of writing this article, the newest, stable version of Python is 3.5.2 (from 27 June 2016). For the purpose of this article, we will want to use the newest version of Python.
+OS X 10.11 comes with Python preinstalled. On my 10.11.6 it is `Python 2.7.10 (default, Oct 23 2015, 19:19:21)`. As of the time of writing this article, the newest, stable version of Python is 3.5.2 (from 27 June 2016). For the purpose of this article, we will want to use the newest version of Python.
 
 To check the version of Python (or if it's already installed) run `python --version` in your terminal.
 
@@ -71,7 +69,7 @@ We have the Dockerfile ready, now it's time to build the image from that file.
 
 If it finished without errors, you should be able to see you image on the list by running
 
-`docker images | grep python`.
+`docker images | grep python`
 
 Now, we have a Docker image with an operating system and Python installed.
 
@@ -106,16 +104,6 @@ Assuming our code is in `/Users/jdoe/code`, run
 `docker run -it --rm -v /Users/jdoe/code:/src/ jkulak/python-dev python /src/hello.py`
 
 The `-v` command mounts the local directory in r/w mode. Deleting things from inside th container form a mounted directory will, of coruse, remove it from your local directory.
-
-## Code editor
-
-My code editor of choice of programming in Python is Atom by Github.com
-
-
-
-## Using Docker
-
-...
 
 ## Where to learn Python programming
 

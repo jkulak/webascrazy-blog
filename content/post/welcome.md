@@ -1,5 +1,5 @@
 +++
-tags = [ "Other" ]
+tags = [ "other" ]
 title = "Welcome to the new Webascrazy.net"
 date = "2016-12-08T18:58:22-06:00"
 +++

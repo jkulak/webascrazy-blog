@@ -2,8 +2,7 @@
 title = "Bits, bytes, encoding, char sets and file formats"
 description = ""
 author = "Jakub Kułak"
-tags = [
-]
+tags = ["programming", "learning"]
 date = "2016-12-13T12:50:29-06:00"
 draft = false
 +++

@@ -153,7 +153,7 @@
 
 &lt;h2 id=&#34;installing-updating-python&#34;&gt;Installing/updating Python&lt;/h2&gt;
 
-&lt;p&gt;OS X 10.11 comes with Python preinstalled. On my 10.11.6 it&amp;rsquo;s &lt;code&gt;Python 2.7.10 (default, Oct 23 2015, 19:19:21)&lt;/code&gt;. As of the time of writing this article, the newest, stable version of Python is 3.5.2 (from 27 June 2016). For the purpose of this article, we will want to use the newest version of Python.&lt;/p&gt;
+&lt;p&gt;OS X 10.11 comes with Python preinstalled. On my 10.11.6 it is &lt;code&gt;Python 2.7.10 (default, Oct 23 2015, 19:19:21)&lt;/code&gt;. As of the time of writing this article, the newest, stable version of Python is 3.5.2 (from 27 June 2016). For the purpose of this article, we will want to use the newest version of Python.&lt;/p&gt;
 
 &lt;p&gt;To check the version of Python (or if it&amp;rsquo;s already installed) run &lt;code&gt;python --version&lt;/code&gt; in your terminal.&lt;/p&gt;
 
@@ -200,7 +200,7 @@
 
 &lt;p&gt;If it finished without errors, you should be able to see you image on the list by running&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;docker images | grep python&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker images | grep python&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, we have a Docker image with an operating system and Python installed.&lt;/p&gt;
 
@@ -243,14 +243,6 @@
 &lt;p&gt;&lt;code&gt;docker run -it --rm -v /Users/jdoe/code:/src/ jkulak/python-dev python /src/hello.py&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;code&gt;-v&lt;/code&gt; command mounts the local directory in r/w mode. Deleting things from inside th container form a mounted directory will, of coruse, remove it from your local directory.&lt;/p&gt;
-
-&lt;h2 id=&#34;code-editor&#34;&gt;Code editor&lt;/h2&gt;
-
-&lt;p&gt;My code editor of choice of programming in Python is Atom by Github.com&lt;/p&gt;
-
-&lt;h2 id=&#34;using-docker&#34;&gt;Using Docker&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
 
 &lt;h2 id=&#34;where-to-learn-python-programming&#34;&gt;Where to learn Python programming&lt;/h2&gt;
 

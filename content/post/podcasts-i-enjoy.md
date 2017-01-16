@@ -1,6 +1,5 @@
 +++
-tags = [
-]
+tags = ["learning", "other"]
 title = "podcasts i enjoy"
 description = ""
 author = ""

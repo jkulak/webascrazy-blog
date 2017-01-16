@@ -1,7 +1,6 @@
 +++
 author = ""
-tags = [
-]
+tags = ["programming", "learning"]
 title = "Collection of articles that opened my eyes as a web developer."
 description = ""
 date = "2016-12-09T12:43:18-06:00"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webascrazy</title>
+    <link>http://webascrazy.net/tags/life.xml</link>
+    <description>Recent content on Webascrazy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://webascrazy.net/tags/life.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Summary of my 2016</title>
+      <link>http://webascrazy.net/2016/12/31/summary-of-my-2016/</link>
+      <pubDate>Sat, 31 Dec 2016 15:02:32 -0600</pubDate>
+      
+      <guid>http://webascrazy.net/2016/12/31/summary-of-my-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;p&gt;2016 brought many changes in my life, and thanks to 11 months of holidays in Mexico, I had plenty of time to organize my dev stuff and finish/close remaining projects.&lt;/p&gt;
+
+&lt;p&gt;It has been a year of&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker-compose up&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;man git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go build&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pm2 start --no-daemon process.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_markdown_&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;😳👌🏻 emojis&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.instagram.com/iamchilaquiles/&#34;&gt;chilaquiles in Mexico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;podcasts (read which &lt;a href=&#34;http://webascrazy.net/2016/12/11/podcasts-i-enjoy&#34;&gt;podcasts I enjoy&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;e idioma español&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;I have dockerized 🐳 most of my private projects for the ease of deployment and maintenance. Most of them are hosted on one DigitalOcean droplet, using a &lt;a href=&#34;https://github.com/jkulak/docker-hub-proxy&#34;&gt;docker based proxy&lt;/a&gt; to route the traffic.&lt;/p&gt;
+
+&lt;p&gt;I have set up monitoring for most of my private websites/services/experiments, using &lt;a href=&#34;https://uptimerobot.com/&#34;&gt;UptimeRobot&lt;/a&gt;: &lt;a href=&#34;http://status.webascrazy.net/&#34;&gt;http://status.webascrazy.net/&lt;/a&gt; and I strive for five 9&amp;rsquo;s availability.&lt;/p&gt;
+
+&lt;p&gt;After looking at Rust, Erlang, Scala and Go, I have finally focused on Golang, and I will definitely continue in 2017. Some code is already out there on GitHub&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jkulak/gpress&#34;&gt;https://github.com/jkulak/gpress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jkulak/gcompressor&#34;&gt;https://github.com/jkulak/gcompressor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After years of using git, I have decided to understand all (a lot) aspects of the tool. I have read many tutorials, most of the man pages, and watched hours of videos on YouTube. The result of that research is my git book/README.md file: &lt;a href=&#34;https://github.com/jkulak/git-ninja&#34;&gt;https://github.com/jkulak/git-ninja&lt;/a&gt; that I plan to take further in 2017.&lt;/p&gt;
+
+&lt;h2 id=&#34;plans-for-2017&#34;&gt;Plans for 2017&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Become fluent in Golang (I want to be able to rate myself 4 out of 5 for Go knowledge)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Contribute to Golang source code&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Make &lt;a href=&#34;https://github.com/jkulak/git-ninja&#34;&gt;Git ninja&lt;/a&gt; a solid resource for developers&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Publish at least 55 blog articles on webascrazy.net&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -24,3 +24,7 @@ code {
     color: white;
     padding: 4px 10px;
 }
+
+.post-content ul ul, ul ol, ol ul, ol ol {
+    margin: 4px 0 0 60px;
+}

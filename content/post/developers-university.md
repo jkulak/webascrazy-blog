@@ -2,8 +2,7 @@
 title = "developers university"
 description = ""
 author = ""
-tags = [
-]
+tags = ["programming", "learning"]
 date = "2016-12-13T12:50:29-06:00"
 draft = true
 +++

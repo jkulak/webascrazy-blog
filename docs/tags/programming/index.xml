@@ -65,5 +65,397 @@
 </description>
     </item>
     
+    <item>
+      <title>Summary of my 2016</title>
+      <link>http://webascrazy.net/2016/12/31/summary-of-my-2016/</link>
+      <pubDate>Sat, 31 Dec 2016 15:02:32 -0600</pubDate>
+      
+      <guid>http://webascrazy.net/2016/12/31/summary-of-my-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
+
+&lt;p&gt;2016 brought many changes in my life, and thanks to 11 months of holidays in Mexico, I had plenty of time to organize my dev stuff and finish/close remaining projects.&lt;/p&gt;
+
+&lt;p&gt;It has been a year of&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker-compose up&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;man git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go build&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pm2 start --no-daemon process.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_markdown_&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;😳👌🏻 emojis&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.instagram.com/iamchilaquiles/&#34;&gt;chilaquiles in Mexico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;podcasts (read which &lt;a href=&#34;http://webascrazy.net/2016/12/11/podcasts-i-enjoy&#34;&gt;podcasts I enjoy&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;e idioma español&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;I have dockerized 🐳 most of my private projects for the ease of deployment and maintenance. Most of them are hosted on one DigitalOcean droplet, using a &lt;a href=&#34;https://github.com/jkulak/docker-hub-proxy&#34;&gt;docker based proxy&lt;/a&gt; to route the traffic.&lt;/p&gt;
+
+&lt;p&gt;I have set up monitoring for most of my private websites/services/experiments, using &lt;a href=&#34;https://uptimerobot.com/&#34;&gt;UptimeRobot&lt;/a&gt;: &lt;a href=&#34;http://status.webascrazy.net/&#34;&gt;http://status.webascrazy.net/&lt;/a&gt; and I strive for five 9&amp;rsquo;s availability.&lt;/p&gt;
+
+&lt;p&gt;After looking at Rust, Erlang, Scala and Go, I have finally focused on Golang, and I will definitely continue in 2017. Some code is already out there on GitHub&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jkulak/gpress&#34;&gt;https://github.com/jkulak/gpress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jkulak/gcompressor&#34;&gt;https://github.com/jkulak/gcompressor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After years of using git, I have decided to understand all (a lot) aspects of the tool. I have read many tutorials, most of the man pages, and watched hours of videos on YouTube. The result of that research is my git book/README.md file: &lt;a href=&#34;https://github.com/jkulak/git-ninja&#34;&gt;https://github.com/jkulak/git-ninja&lt;/a&gt; that I plan to take further in 2017.&lt;/p&gt;
+
+&lt;h2 id=&#34;plans-for-2017&#34;&gt;Plans for 2017&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Become fluent in Golang (I want to be able to rate myself 4 out of 5 for Go knowledge)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Contribute to Golang source code&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Make &lt;a href=&#34;https://github.com/jkulak/git-ninja&#34;&gt;Git ninja&lt;/a&gt; a solid resource for developers&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Publish at least 55 blog articles on webascrazy.net&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting up Python development environment on mac OS X</title>
+      <link>http://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</link>
+      <pubDate>Sun, 18 Dec 2016 13:49:57 -0600</pubDate>
+      
+      <guid>http://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</guid>
+      <description>
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Python is an interpreted, interactive, object-oriented, open-source programming language.&lt;/p&gt;
+
+&lt;p&gt;In this article, I&amp;rsquo;m assuming, there was no prior Python development done on your computer and you know how to use a terminal.&lt;/p&gt;
+
+&lt;p&gt;We will go through the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Installing/updating Python to the newest (or required) version
+
+&lt;ul&gt;
+&lt;li&gt;locally 💻&lt;/li&gt;
+&lt;li&gt;using Docker 🐳 (my preferred option)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Install pip (the Python package manager)&lt;/li&gt;
+&lt;li&gt;Setting up development environment
+
+&lt;ul&gt;
+&lt;li&gt;code editor&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Running your first program&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;installing-updating-python&#34;&gt;Installing/updating Python&lt;/h2&gt;
+
+&lt;p&gt;OS X 10.11 comes with Python preinstalled. On my 10.11.6 it is &lt;code&gt;Python 2.7.10 (default, Oct 23 2015, 19:19:21)&lt;/code&gt;. As of the time of writing this article, the newest, stable version of Python is 3.5.2 (from 27 June 2016). For the purpose of this article, we will want to use the newest version of Python.&lt;/p&gt;
+
+&lt;p&gt;To check the version of Python (or if it&amp;rsquo;s already installed) run &lt;code&gt;python --version&lt;/code&gt; in your terminal.&lt;/p&gt;
+
+&lt;p&gt;Version 3 has introduced many improvements over the previous version, but also brought many incompatibilities (which is often a source of many jokes). For details see here: &lt;a href=&#34;https://wiki.python.org/moin/Python2orPython3&#34;&gt;https://wiki.python.org/moin/Python2orPython3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unless you are working on a project that specifically requires Python version 2 - I  suggest to use the newest version, as all of the new aspects of Python 3 are the future of the language.&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-updating-python-locally&#34;&gt;Installing/updating Python locally&lt;/h3&gt;
+
+&lt;p&gt;There are several option to install Python on OS X. My preferred way is to use Homebrew, the most popular package manager for OSX. If you ar not yet using Homebrew (nor any other package managers for OSX), install it followin the one step guide: &lt;a href=&#34;http://brew.sh/#install&#34;&gt;http://brew.sh/#install&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once installed, use Homebrew to install Python.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install python&lt;/code&gt; - to install version 2.7&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install python3&lt;/code&gt; - to install the newest 3.x version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To run Python CLI, type &lt;code&gt;python&lt;/code&gt; or &lt;code&gt;python3&lt;/code&gt; depending on the version you have installed and need.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-your-development-environment-with-docker&#34;&gt;Creating your development environment with Docker&lt;/h3&gt;
+
+&lt;p&gt;Since it happens, that I have to work on multiple projects at the same time (sometimes I have to use two different versions of the same programming language), I need to be able to switch between versions easily. That is one of the reasons I like to keep all my developments environments in Docker images.&lt;/p&gt;
+
+&lt;p&gt;Docker lets you have multiple operating systems/environments enclosed in separate images that are easy to build and manage.&lt;/p&gt;
+
+&lt;p&gt;There are other ways to separate your environments (like virtualenv and Pyenv) - but I found Docker to be the easiest and universal (works for any programming language/environment).&lt;/p&gt;
+
+&lt;p&gt;NOTE: Docker is a powerfull tool, I will not explain all the details here. If you want to learn more about Docker, head to &lt;a href=&#34;https://docs.docker.com/engine/tutorials/&#34;&gt;https://docs.docker.com/engine/tutorials/&lt;/a&gt;. Just remember - it&amp;rsquo;s easier than it seems.&lt;/p&gt;
+
+&lt;p&gt;To install Docker, head to: &lt;a href=&#34;https://docs.docker.com/docker-for-mac/&#34;&gt;https://docs.docker.com/docker-for-mac/&lt;/a&gt;. After you install and run Docker, you will be able to use &lt;code&gt;docker&lt;/code&gt; command from the terminal.&lt;/p&gt;
+
+&lt;p&gt;First we will create an image with an operating system and required version of Python preinstalled. To do that, create an empty &lt;code&gt;Dockerfile&lt;/code&gt; - that will store the configuration (definition) of our image.&lt;/p&gt;
+
+&lt;p&gt;First we need to choose the base Docker image we will use for our own (Docker images are composed from layers and use a base image). We colud use our favorite Linux distribution as a base image and install Python on top of that, but I would rather look for an official, popular Python image.&lt;/p&gt;
+
+&lt;p&gt;Head to &lt;a href=&#34;https://store.docker.com/&#34;&gt;https://store.docker.com/&lt;/a&gt; and search for &amp;lsquo;python&amp;rsquo;. Perfect, there is a Docker Official Image for Python. It has a number of available tags, each tag is an image version with different Python version installed on different operating system (there are images using i.e. Windows, Ubuntu, etc.).&lt;/p&gt;
+
+&lt;p&gt;For my development purposes, I will go for a smallest image possible with Python 3. I have good experience with Apline Linux, so my choice is &amp;ldquo;3.6.0b2-alpine, 3.6-alpine&amp;rdquo; tag. I click it and copy the Dockerfile content to my Docker file.&lt;/p&gt;
+
+&lt;p&gt;We have the Dockerfile ready, now it&amp;rsquo;s time to build the image from that file.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker build -t jkulak/python-dev .&lt;/code&gt; - I&amp;rsquo;m tagging the image that is being built with my nickname and the name. There is a &lt;code&gt;.&lt;/code&gt; at the end of the command which means - the &lt;code&gt;Dockerfile&lt;/code&gt; is in the current directory.&lt;/p&gt;
+
+&lt;p&gt;If it finished without errors, you should be able to see you image on the list by running&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker images | grep python&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, we have a Docker image with an operating system and Python installed.&lt;/p&gt;
+
+&lt;h4 id=&#34;using-docker-image-for-python-development&#34;&gt;Using docker image for Python development&lt;/h4&gt;
+
+&lt;p&gt;To use the Docker image, we need to create a container (it is like a virtual machine on our system) from the image and connect to it.&lt;/p&gt;
+
+&lt;p&gt;It is important to know that Docker image exits (stops) as soon as the process they were runnin exits/stops.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To &amp;ldquo;go inside&amp;rdquo; the container and use the command line, run&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -ti --rm jkulak/python-dev sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I am using the &lt;code&gt;--rm&lt;/code&gt; option, so that the container is removed as soon as I finish what I was doing. Otherwise it will be created, will do what I wanted and then it will be stopped and will be available to be run again. It will be listed when you run &lt;code&gt;docker ps -a&lt;/code&gt; - that shows all the containers created and available in your system.&lt;/p&gt;
+
+&lt;p&gt;NOTE: Other option would be to tag (name) the container you are creating and then use the same one using commands &lt;code&gt;exec&lt;/code&gt; and &lt;code&gt;start&lt;/code&gt; and using the tag name you have created.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run Python CLI from using our image use&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -ti --rm jkulak/python-dev python3&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This command creates a container from our image, runs it, and runs Python inside. Did it take 0.5s, or less? Isn&amp;rsquo;t that truly amazing? 😳&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run single .py file from your local machine use&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -i --rm jkulak/python-dev python &amp;lt; hello.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run a project with multiple files using Python from the container we need to mount our project directory inside the container when running the container.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Assuming our code is in &lt;code&gt;/Users/jdoe/code&lt;/code&gt;, run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;docker run -it --rm -v /Users/jdoe/code:/src/ jkulak/python-dev python /src/hello.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;-v&lt;/code&gt; command mounts the local directory in r/w mode. Deleting things from inside th container form a mounted directory will, of coruse, remove it from your local directory.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-learn-python-programming&#34;&gt;Where to learn Python programming&lt;/h2&gt;
+
+&lt;p&gt;A list of recommended resources for starting and advancing your Python programming skills:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/learn/python&#34;&gt;https://www.codecademy.com/learn/python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;keep-an-eye-on&#34;&gt;Keep an eye on&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vinta/awesome-python&#34;&gt;https://github.com/vinta/awesome-python&lt;/a&gt; - a curated list of awesome Python frameworks, libraries, software and resources &lt;a href=&#34;http://awesome-python.com/&#34;&gt;http://awesome-python.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bits, bytes, encoding, char sets and file formats</title>
+      <link>http://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</link>
+      <pubDate>Tue, 13 Dec 2016 12:50:29 -0600</pubDate>
+      
+      <guid>http://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</guid>
+      <description>
+
+&lt;h1 id=&#34;bits-bytes-char-sets-encoding-file-formats&#34;&gt;Bits, bytes, char sets, encoding, file formats&lt;/h1&gt;
+
+&lt;p&gt;To full understand the concepts of storing data and encoding, we will use the sequence of bytes, and step by step transform it to see what kind of data it stores.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start from bottom, and move up to be able to understand all the concepts step by step.&lt;/p&gt;
+
+&lt;h2 id=&#34;storing-bits-and-bytes-raw-data&#34;&gt;Storing bits and bytes, raw data&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Data (either in memory or files on a drive) is stored as a sequence of bits (0s and 1s) - this is the sequence we will use in all next examples:
+&lt;code&gt;111011111011101110111111010101100110111101101001011011001100001 110100000001000001111000010011111000000100100001010010000001010&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Since every 8 bits make a byte (this is for the &lt;a href=&#34;https://www.quora.com/Why-it-is-that-1-Byte-is-equal-to-8-Bits&#34;&gt;historical reason&lt;/a&gt;), we can say that files are stored as a sequence of bytes:
+&lt;code&gt;11101111 10111011 10111111 01010110 01101111 01101001 01101100 11000011 10100000 00100000 11110000 10011111 10010000 10100100 00001010&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bytes can be represented in different &lt;a href=&#34;https://en.wikipedia.org/wiki/Numeral_system&#34;&gt;numeral systems&lt;/a&gt; (this is purely for presentational purposes - because it is easier for us, humans, to distinguish decimal and hexadecimal values that binary values)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;binary (0, 1), min byte value: 00000000, max byte value: 11111111 (like seen above)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9), min byte value: 0, max byte value: 255
+&lt;code&gt;239 187 191 86 111 105 108 195 160 32 240 159 144 164 10&lt;/code&gt; - you will not see that too often - it&amp;rsquo;s just for explanation purposes here&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;hexadecimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f), min byte value: 0, max byte value: ff (we add the preceding 0 for values smaller than 10 for readability)
+&lt;code&gt;ef bb bf 56 6f 69 6c c3 a0 20 f0 9f 90 a4 0a&lt;/code&gt; - to distinguish hexadecimal notation, often &lt;code&gt;0x&lt;/code&gt; is added in front the values, therefor it becomes &lt;code&gt;0xefbbbf 0x566f69 0x6cc3a0 0x20f09f 0x90a40a&lt;/code&gt; (after grouping some bytes together)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;By looking at those bytes - we are not yet able to tell anything about the data that is being stored - if it is an image, json file or a PDF file. Although, if you are familiar with encoding already, the first three bytes: &lt;code&gt;0xefbbbf&lt;/code&gt; might give you a clue.&lt;/p&gt;
+
+&lt;h2 id=&#34;character-encoding&#34;&gt;Character encoding&lt;/h2&gt;
+
+&lt;p&gt;Character encoding is an algorithm that translates a list of characters (which can be letters, symbols, emoji) to binary code, so it can be stored on disk.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of character encodings. The most popular in 2016 for websites, are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UTF-8 (88.1%)&lt;/li&gt;
+&lt;li&gt;ISO-8859-1 (5.5%)&lt;/li&gt;
+&lt;li&gt;Windows-1251 (1,7%)&lt;/li&gt;
+&lt;li&gt;Shift JIS (1,1%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ascii&#34;&gt;ASCII&lt;/h3&gt;
+
+&lt;p&gt;It is a 7-bit code for coding characters in computers and generally in all communication devices that use text. 7-bit (0b0000000–0b1111111) means it can represent 128 characters, from which, some of them are not visible (control characters). Complete list with codes can be found here: &lt;a href=&#34;http://www.columbia.edu/kermit/ascii.html&#34;&gt;http://www.columbia.edu/kermit/ascii.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;iso-8859&#34;&gt;ISO-8859&lt;/h3&gt;
+
+&lt;p&gt;It is a set of 8-bit single-byte coded character encoding schemes. 8-bit (0b00000000–0b11111111) means that each of the encodings from ISO-8859 can represent 255 characters, from which some of them are not visible (control characters). For backward compatibility first 128 characters have same codes as in ASCII. Rest of the codes are assign to language specific characters, depending on ISO-8859 part.&lt;/p&gt;
+
+&lt;h3 id=&#34;iso-8859-2&#34;&gt;ISO-8859–2&lt;/h3&gt;
+
+&lt;p&gt;Part 2 of ISO-8859 character encoding (also referred as Latin-2). Created to be used with Central European languages like Bosnian, Polish, Croatian, Czech, Slovak, Slovene and some else. First 128 characters are same as ASCII codes.&lt;/p&gt;
+
+&lt;h3 id=&#34;windows-1250&#34;&gt;Windows-1250&lt;/h3&gt;
+
+&lt;p&gt;It is MS Windows 8-bit character encoding for Central European languages. It has many of the same characters as ISO-8895–2 but in a different arrangement, which leads to some confusions.&lt;/p&gt;
+
+&lt;h3 id=&#34;utf-8&#34;&gt;UTF-8&lt;/h3&gt;
+
+&lt;p&gt;UTF-8 is a 8-bit variable-length character encoding for Unicode. This means that one character is represented by 1 to 4 bytes, so UTF-8 contains way more characters than ISO-8895 and other local charsets. Unlike UTF-16 and UTF-32, UTF-8 is backward compatible with ASCII (first 128 characters are the same) — this is one of the reasons UTF-8 got most popular from among unicode encodings.&lt;/p&gt;
+
+&lt;h2 id=&#34;guessing-the-file-encoding&#34;&gt;Guessing the file encoding&lt;/h2&gt;
+
+&lt;p&gt;There is no universal way to tell the file (sequence of bytes) encoding. Different applications, make a guess based on several rules, example of detection: &lt;a href=&#34;https://github.com/aadsm/jschardet/blob/master/src/universaldetector.js#L75-L100&#34;&gt;https://github.com/aadsm/jschardet/blob/master/src/universaldetector.js#L75-L100&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The best shot is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Byte_order_mark&#34;&gt;BOM&lt;/a&gt;, byte order mark, that might be present as the first bytes in the file.&lt;/p&gt;
+
+&lt;p&gt;By looking at our sequence &lt;code&gt;0xefbbbf 0x566f69 0x6cc3a0 0x20f09f 0x90a40a&lt;/code&gt; we can see, that the first three bytes are actually a BOM for UTF-8 encoding &lt;code&gt;0xef 0xbb 0xbf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s try to save those bytes into a file and see what comes up (we use &lt;code&gt;\x&lt;/code&gt; to be able to use hexadecimal values):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo -n -e &#39;\xef\xbb\xbf\x56\x6f\x69\x6c\xc3\xa0\x20\xf0\x9f\x90\xa4\x0a&#39; &amp;gt; testfile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, running &lt;code&gt;$ cat testfile&lt;/code&gt; might give you different results, depending on which encoding is used by your terminal. You might get gibberish like &lt;code&gt;ï»¿VoilÃ  ğ¤&lt;/code&gt; or something more meaningful when you use UTF-8 - see for yourself.&lt;/p&gt;
+
+&lt;p&gt;Removing the three first bytes from our sequence (UTF-8 BOM), would still give good results when displaying the content of the file using UTF-8, but would not display correctly using different encoding (here we use &lt;code&gt;iconv&lt;/code&gt; to view the content of the file using selected encoding):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ iconv -t utf-16be testfile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;bom&#34;&gt;BOM&lt;/h3&gt;
+
+&lt;p&gt;Byte Order Mark is a character (can be 2-5 bytes long) that placed at the start of a text stream (sequence of bytes) can signal several things to a reader of the stream, like&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;which of the Unicode character encodings is used to encode the stream&lt;/li&gt;
+&lt;li&gt;byte order (endianness: little-endian (LE) or big-endian (BE))&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;🐥 :~ $ iconv -t utf-16be testfile | xxd
+0000000: 0056 006f 0069 006c 00e0 0020 d83d dc24  .V.o.i.l... .=.$
+0000010: 000a                                     ..
+🐥 :~ $ xxd testfile
+0000000: 566f 696c c3a0 20f0 9f90 a40a            Voil.. .....
+🐥 :~ $iconv -t utf-16le testfile | xxd
+0000000: 5600 6f00 6900 6c00 e000 2000 3dd8 24dc  V.o.i.l... .=.$.
+0000010: 0a00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;character-sets&#34;&gt;Character sets&lt;/h2&gt;
+
+&lt;p&gt;A character set is a list of characters with unique numbers (these numbers are sometimes referred to as &amp;ldquo;code points&amp;rdquo;). Unicode is the most popular example of a character set (that can be encoded using different character encodings, like UTF-7, UTF-8, UTF-16BE, UTF-32 and others).&lt;/p&gt;
+
+&lt;h3 id=&#34;unicode&#34;&gt;Unicode&lt;/h3&gt;
+
+&lt;p&gt;Unicode is a standard for consistent representation and handling of text expressed in most of the world’s writing systems (e-mails, files, websites). Despite graphical representation it handles related items, such as character properties, rules for normalization, decomposition, collation, rendering, and bidirectional display order (for the correct display of text containing both right-to-left scripts, such as Arabic or Hebrew, and left-to-right scripts).&lt;/p&gt;
+
+&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;View file content in hexadecimal format : &lt;code&gt;$ xxd testfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;View file content in binary format: &lt;code&gt;$ xxd -b testfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Write bytes to file: &lt;code&gt;$ echo -n -e &#39;\xEF\xBB\xBF\xf0\x9f\x98\x80&#39; &amp;gt; smiley_face&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;See the list of iconv supported encodings: &lt;code&gt;$ iconv -l&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Try to guess file encoding: &lt;code&gt;$ file -I testfile&lt;/code&gt; (osx), &lt;code&gt;$ file -i testfile&lt;/code&gt; (linux). For better detection, consider using &lt;a href=&#34;https://linux.die.net/man/1/enconv&#34;&gt;https://linux.die.net/man/1/enconv&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;In browser JavaScript console&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var out = &amp;quot;&amp;quot;
+&amp;quot;11101111 10111011 10111111 01010110 01101111 01101001 01101100 11000011 10100000 00100000 11110000 10011111 10010000 10100100 00001010&amp;quot;.split(&amp;quot; &amp;quot;).forEach(function(elem) {
+out += parseInt(elem, 2) + &amp;quot; &amp;quot;
+})
+console.log(out)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What, every (web) developer should know about -- the series</title>
+      <link>http://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</link>
+      <pubDate>Fri, 09 Dec 2016 12:44:38 -0600</pubDate>
+      
+      <guid>http://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</guid>
+      <description>
+
+&lt;p&gt;After writing multiple onboarding documents for developers in the companies I worked for, I have decided to publish something on-line not to have to write it over again.&lt;/p&gt;
+
+&lt;p&gt;This article is just an overview of the topics that I will describe over the next month (it might get updated in the next weeks). I plan to finish the whole series by the end of January 2017.&lt;/p&gt;
+
+&lt;p&gt;The series is designed for all developers (usually from beginner to medium level) regardless from the programming languages they use.&lt;/p&gt;
+
+&lt;p&gt;My goal is to be able to have a set of articles to share with developers that I would work with, so that, we can express our ideas using the same terminology and with the same level of abstraction.&lt;/p&gt;
+
+&lt;h2 id=&#34;planned-series-parts&#34;&gt;Planned series parts&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Networks
+
+&lt;ul&gt;
+&lt;li&gt;TCP and UDP (Transmission Control Protocol and User Datagram Protocol)&lt;/li&gt;
+&lt;li&gt;The OSI Model Layers (The 7 Layers)&lt;/li&gt;
+&lt;li&gt;IP addresses (IPv4 vs. IPv6)&lt;/li&gt;
+&lt;li&gt;What happens after you enter an URL address in your browser and before you get the response&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;SSH/TLS/HTTPS/SFTP&lt;/li&gt;
+&lt;li&gt;Caching (all aspects of cache and web cache)&lt;/li&gt;
+&lt;li&gt;Encoding, bits and bytes (char sets and code pages)&lt;/li&gt;
+&lt;li&gt;Tools
+
+&lt;ul&gt;
+&lt;li&gt;Using git&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Main principles of scalable systems&lt;/li&gt;
+&lt;li&gt;Web security
+
+&lt;ul&gt;
+&lt;li&gt;Main principles&lt;/li&gt;
+&lt;li&gt;Main threats (OWASP)&lt;/li&gt;
+&lt;li&gt;Web server configuration, good practices&lt;/li&gt;
+&lt;li&gt;Database server configuration, good practices&lt;/li&gt;
+&lt;li&gt;Code, good practices&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Differences in programming languages (and their implemented programming paradigms)&lt;/li&gt;
+&lt;li&gt;Approach: proper tool for the job + proper skill set for the job&lt;/li&gt;
+&lt;li&gt;Data structures&lt;/li&gt;
+&lt;li&gt;Algorithm time complexity (Big O notation)&lt;/li&gt;
+&lt;li&gt;Searching algorithms&lt;/li&gt;
+&lt;li&gt;Coding standards (how to follow it and make it easy)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I plan to write short and simple articles with decent introductions to those topic, and with resources for further reading.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
