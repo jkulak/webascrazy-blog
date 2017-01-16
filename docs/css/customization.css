@@ -23,6 +23,7 @@ code {
     background-color: #5e5e5e;
     color: white;
     padding: 4px 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
 }
 
 .post-content ul ul, ul ol, ol ul, ol ol {
