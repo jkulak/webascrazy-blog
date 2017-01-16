@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webascrazy</title>
-    <link>webascrazy.net/tags/tutorial.xml</link>
+    <link>https://webascrazy.net/tags/tutorial.xml</link>
     <description>Recent content on Webascrazy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="webascrazy.net/tags/tutorial.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://webascrazy.net/tags/tutorial.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up Python development environment on mac OS X</title>
-      <link>/webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</link>
+      <link>https://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</link>
       <pubDate>Sun, 18 Dec 2016 13:49:57 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</guid>
+      <guid>https://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</guid>
       <description>
 
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;

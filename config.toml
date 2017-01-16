@@ -1,4 +1,4 @@
-baseurl = "webascrazy.net/"
+baseurl = "https://webascrazy.net/"
 title = "Webascrazy"
 languageCode = "en-us"
 theme = "ghostwriter"

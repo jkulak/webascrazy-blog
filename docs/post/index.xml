@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-rsses on Webascrazy</title>
-    <link>webascrazy.net/post.xml</link>
+    <link>https://webascrazy.net/post.xml</link>
     <description>Recent content in Post-rsses on Webascrazy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Jan 2017 09:00:18 +0100</lastBuildDate>
-    <atom:link href="webascrazy.net/post.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://webascrazy.net/post.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Grow and test your developer skills</title>
-      <link>/webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</link>
+      <link>https://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</link>
       <pubDate>Mon, 16 Jan 2017 09:00:18 +0100</pubDate>
       
-      <guid>/webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</guid>
+      <guid>https://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</guid>
       <description>
 
 &lt;p&gt;Technology changes daily. New frameworks, tools and programming languages emerge on weekly basis. It is not possible to keep up with everything, but it is important to stay sharp and understand the trends, learn new approaches and paradigms to become a better programmer and problem solver. It is the key in our business to keep your finger on the pulse.&lt;/p&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>Summary of my 2016</title>
-      <link>/webascrazy.net/2016/12/31/summary-of-my-2016/</link>
+      <link>https://webascrazy.net/2016/12/31/summary-of-my-2016/</link>
       <pubDate>Sat, 31 Dec 2016 15:02:32 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/31/summary-of-my-2016/</guid>
+      <guid>https://webascrazy.net/2016/12/31/summary-of-my-2016/</guid>
       <description>
 
 &lt;h2 id=&#34;tl-dr&#34;&gt;tl;dr&lt;/h2&gt;
@@ -89,7 +89,7 @@
 &lt;li&gt;&lt;code&gt;_markdown_&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;😳👌🏻 emojis&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.instagram.com/iamchilaquiles/&#34;&gt;chilaquiles in Mexico&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;podcasts (read which &lt;a href=&#34;webascrazy.net/2016/12/11/podcasts-i-enjoy&#34;&gt;podcasts I enjoy&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;podcasts (read which &lt;a href=&#34;https://webascrazy.net/2016/12/11/podcasts-i-enjoy&#34;&gt;podcasts I enjoy&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;e idioma español&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -121,10 +121,10 @@
     
     <item>
       <title>Setting up Python development environment on mac OS X</title>
-      <link>/webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</link>
+      <link>https://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</link>
       <pubDate>Sun, 18 Dec 2016 13:49:57 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</guid>
+      <guid>https://webascrazy.net/2016/12/18/setting-up-python-development-environment-on-mac-os-x/</guid>
       <description>
 
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
@@ -262,10 +262,10 @@
     
     <item>
       <title>Bits, bytes, encoding, char sets and file formats</title>
-      <link>/webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</link>
+      <link>https://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</link>
       <pubDate>Tue, 13 Dec 2016 12:50:29 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</guid>
+      <guid>https://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</guid>
       <description>
 
 &lt;h1 id=&#34;bits-bytes-char-sets-encoding-file-formats&#34;&gt;Bits, bytes, char sets, encoding, file formats&lt;/h1&gt;
@@ -403,10 +403,10 @@ console.log(out)
     
     <item>
       <title>What, every (web) developer should know about -- the series</title>
-      <link>/webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</link>
+      <link>https://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</link>
       <pubDate>Fri, 09 Dec 2016 12:44:38 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</guid>
+      <guid>https://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</guid>
       <description>
 
 &lt;p&gt;After writing multiple onboarding documents for developers in the companies I worked for, I have decided to publish something on-line not to have to write it over again.&lt;/p&gt;
@@ -460,10 +460,10 @@ console.log(out)
     
     <item>
       <title>Welcome to the new Webascrazy.net</title>
-      <link>/webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</link>
+      <link>https://webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</link>
       <pubDate>Thu, 08 Dec 2016 18:58:22 -0600</pubDate>
       
-      <guid>/webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</guid>
+      <guid>https://webascrazy.net/2016/12/08/welcome-to-the-new-webascrazy.net/</guid>
       <description>&lt;p&gt;Welcome to the new version of webascrazy.net!&lt;/p&gt;
 
 &lt;p&gt;After I started learning &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; earlier this year, I started exploring different tools built using Go. On of them was &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; a &amp;ldquo;Static Website Engine&amp;rdquo;. I decided to give it a try, review its source code - and hopefully soon, also contribute my changes.&lt;/p&gt;
