@@ -12,6 +12,12 @@ Understanding new paradigms, learning new tricks and languages feature, lets you
 
 Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.
 
+## TOC
+
+1. [Programming](#programming)
+2. [Security](#security)
+3. [Other](#other)
+
 ## Programming
 - https://www.codewars.com - play Codewars to solve 5-30min tasks in one of many languages (JavaScript, PHP, Python, BASH, Haskell, Swift, SQL, Dart, C, Rust and many others). Great user intrface (sometimes the websites feels slow). Lets me practice languages that I am not currently using in my projects
 - https://codegolf.stackexchange.com - it is called "golf", because the solutions to given problems should be as short as possible - in any language possible (there were even languages created for this particular purpose). Read it to learn about new languages, new languages features, approaches and possibilities. Just have in mind that, the solutions for most problems there are not considered "best practices" (mostly because of the unreadability)
@@ -28,5 +34,5 @@ Below you will find a list of websites that I use and I am a fan of that help me
 
 - http://overthewire.org/wargames/ - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to https://www.wechall.net/ to set-up an account and see your progress in several "hacking" games as well as see a huge list of other "hacking" games
 
-## Bonus
+## Other
 - https://github.com/jwasham/google-interview-university - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview

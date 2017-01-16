@@ -22,6 +22,14 @@
 
 &lt;p&gt;Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.&lt;/p&gt;
 
+&lt;h2 id=&#34;toc&#34;&gt;TOC&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#programming&#34;&gt;Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#security&#34;&gt;Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other&#34;&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&#34;programming&#34;&gt;Programming&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -49,7 +57,7 @@
 &lt;li&gt;&lt;a href=&#34;http://overthewire.org/wargames/&#34;&gt;http://overthewire.org/wargames/&lt;/a&gt; - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to &lt;a href=&#34;https://www.wechall.net/&#34;&gt;https://www.wechall.net/&lt;/a&gt; to set-up an account and see your progress in several &amp;ldquo;hacking&amp;rdquo; games as well as see a huge list of other &amp;ldquo;hacking&amp;rdquo; games&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;bonus&#34;&gt;Bonus&lt;/h2&gt;
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jwasham/google-interview-university&#34;&gt;https://github.com/jwasham/google-interview-university&lt;/a&gt; - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview&lt;/li&gt;
