@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webascrazy</title>
-    <link>http://webascrazy.net/tags/learning.xml</link>
+    <link>webascrazy.net/tags/learning.xml</link>
     <description>Recent content on Webascrazy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://webascrazy.net/tags/learning.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="webascrazy.net/tags/learning.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Grow and test your developer skills</title>
-      <link>http://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</link>
+      <link>/webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</link>
       <pubDate>Mon, 16 Jan 2017 09:00:18 +0100</pubDate>
       
-      <guid>http://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</guid>
+      <guid>/webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</guid>
       <description>
 
 &lt;p&gt;Technology changes daily. New frameworks, tools and programming languages emerge on weekly basis. It is not possible to keep up with everything, but it is important to stay sharp and understand the trends, learn new approaches and paradigms to become a better programmer and problem solver. It is the key in our business to keep your finger on the pulse.&lt;/p&gt;
@@ -67,10 +67,10 @@
     
     <item>
       <title>Bits, bytes, encoding, char sets and file formats</title>
-      <link>http://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</link>
+      <link>/webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</link>
       <pubDate>Tue, 13 Dec 2016 12:50:29 -0600</pubDate>
       
-      <guid>http://webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</guid>
+      <guid>/webascrazy.net/2016/12/13/bits-bytes-encoding-char-sets-and-file-formats/</guid>
       <description>
 
 &lt;h1 id=&#34;bits-bytes-char-sets-encoding-file-formats&#34;&gt;Bits, bytes, char sets, encoding, file formats&lt;/h1&gt;
@@ -208,10 +208,10 @@ console.log(out)
     
     <item>
       <title>What, every (web) developer should know about -- the series</title>
-      <link>http://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</link>
+      <link>/webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</link>
       <pubDate>Fri, 09 Dec 2016 12:44:38 -0600</pubDate>
       
-      <guid>http://webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</guid>
+      <guid>/webascrazy.net/2016/12/09/what-every-web-developer-should-know-about----the-series/</guid>
       <description>
 
 &lt;p&gt;After writing multiple onboarding documents for developers in the companies I worked for, I have decided to publish something on-line not to have to write it over again.&lt;/p&gt;
