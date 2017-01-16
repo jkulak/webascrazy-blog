@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webascrazy</title>
+    <link>http://webascrazy.net/tags/learning.xml</link>
+    <description>Recent content on Webascrazy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://webascrazy.net/tags/learning.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Grow and test your developer skills</title>
+      <link>http://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</link>
+      <pubDate>Mon, 16 Jan 2017 09:00:18 +0100</pubDate>
+      
+      <guid>http://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/</guid>
+      <description>
+
+&lt;p&gt;Technology changes daily. New frameworks, tools and programming languages emerge on weekly basis. It is not possible to keep up with everything, but it is important to stay sharp and understand the trends, learn new approaches and paradigms to become a better programmer and problem solver. It is the key in our business to keep your finger on the pulse.&lt;/p&gt;
+
+&lt;p&gt;Understanding new paradigms, learning new tricks and languages feature, lets you see the problems from different perspectives, and gives you the opportunity, to apply the best fit solution.&lt;/p&gt;
+
+&lt;p&gt;Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.&lt;/p&gt;
+
+&lt;h2 id=&#34;programming&#34;&gt;Programming&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codewars.com&#34;&gt;https://www.codewars.com&lt;/a&gt; - play Codewars to solve 5-30min tasks in one of many languages (JavaScript, PHP, Python, BASH, Haskell, Swift, SQL, Dart, C, Rust and many others). Great user intrface (sometimes the websites feels slow). Lets me practice languages that I am not currently using in my projects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://codegolf.stackexchange.com&#34;&gt;https://codegolf.stackexchange.com&lt;/a&gt; - it is called &amp;ldquo;golf&amp;rdquo;, because the solutions to given problems should be as short as possible - in any language possible (there were even languages created for this particular purpose). Read it to learn about new languages, new languages features, approaches and possibilities. Just have in mind that, the solutions for most problems there are not considered &amp;ldquo;best practices&amp;rdquo; (mostly because of the unreadability)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.khanacademy.org&#34;&gt;https://www.khanacademy.org&lt;/a&gt; - is a non-profit educational organization with a great website. I used it to refresh my data data structures and algorithms knowledge. There are several courses to learn about JavaScript (gaming, drawing and animations and AI: natural simulations), as well as cryptography and information theory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://javascript30.com&#34;&gt;https://javascript30.com&lt;/a&gt; - 31, short, &lt;em&gt;great&lt;/em&gt; videos from the amazing &lt;a href=&#34;https://twitter.com/wesbos&#34;&gt;Wes Bos&lt;/a&gt; that will teach you (remind you of) many JavaScript features and capabilities, as well as programming tricks. Apart from many JavaScript features, I have learned &lt;code&gt;console.table(some_variable);&lt;/code&gt; to display you variables in a form of a table in the browser console 😳&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://flexbox.io/&#34;&gt;https://flexbox.io/&lt;/a&gt; - What the Flexbox? Learn the CSS flexbox model watching short, and to the point videos from &lt;a href=&#34;https://twitter.com/wesbos&#34;&gt;Wes Bos&lt;/a&gt; - check Wes&amp;rsquo;s profile to find even more series to learn other stuff!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/&#34;&gt;scotch.io flexbox visual guide&lt;/a&gt; - play with flexbox proeprties using an on-line form&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://overthewire.org/wargames/&#34;&gt;http://overthewire.org/wargames/&lt;/a&gt; - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to &lt;a href=&#34;https://www.wechall.net/&#34;&gt;https://www.wechall.net/&lt;/a&gt; to set-up an account and see your progress in several &amp;ldquo;hacking&amp;rdquo; games as well as see a huge list of other &amp;ldquo;hacking&amp;rdquo; games&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

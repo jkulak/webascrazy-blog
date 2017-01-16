@@ -24,3 +24,7 @@ Resources that changed the way I think about web development, and that (I feel),
 
 ## Inheritance in JavaScript
 - https://blog.liip.ch/archive/2014/10/09/why-i-dont-use-the-javascript-new-keyword.html
+
+## Web development
+### CSS
+- CSS Flex model: https://css-tricks.com/snippets/css/a-guide-to-flexbox/

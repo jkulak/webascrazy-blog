@@ -26,7 +26,7 @@ It has been a year of
 
 ## Summary
 
-I have dockerized 🐳 most of my private projects for the ease of deployment and maintenance. Most ofd then are hosted on one DigitalOcean droplet, using a [docker based proxy](https://github.com/jkulak/docker-hub-proxy) to route the traffic.
+I have dockerized 🐳 most of my private projects for the ease of deployment and maintenance. Most of them are hosted on one DigitalOcean droplet, using a [docker based proxy](https://github.com/jkulak/docker-hub-proxy) to route the traffic.
 
 I have set up monitoring for most of my private websites/services/experiments, using [UptimeRobot](https://uptimerobot.com/): http://status.webascrazy.net/ and I strive for five 9's availability.
 
