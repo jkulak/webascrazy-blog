@@ -12,7 +12,7 @@ Understanding new paradigms, learning new tricks and languages feature, lets you
 
 Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.
 
-## TOC
+## Table of contents 
 
 1. [Programming](#programming)
 2. [Security](#security)
