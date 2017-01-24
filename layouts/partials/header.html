@@ -20,7 +20,7 @@
     </head>
     <body>
         {{ template "_internal/google_analytics.html" . }}
-        <div id="wrapper">
+        <div id="top-line">
             <header class="site-header">
                 <div class="container">
                     <div class="site-title-wrapper">
@@ -33,6 +33,8 @@
                                 <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
                             </h1>
                         {{ end }}
+                    </div>
+                    <div class="site-community-links-wrapper">
                         <a class="button-square" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-rss"></i></a>
                         {{ with .Site.Params.twitter }}
                             <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}">
@@ -71,5 +73,8 @@
                     </ul>
                 </div>
             </header>
+        </div>
+        <div id="wrapper">
+
 
             <div id="container">

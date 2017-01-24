@@ -8,11 +8,9 @@ date = "2016-12-08T19:18:45-06:00"
 
 +++
 
-## About me
-
 {{< figure src="/jkulak.jpg" alt="Jakub enjoying the sun" >}}
 
-My name is Jakub Kułak, I am a technologist, developer, manager and a team player. After a year in Mexico City, I have recently moved to Warsaw/Poland and I am looking for challenges here as a manager/architect/software engineer.
+My name is Jakub Kułak, I am a technologist, developer, manager and a team player. After a year in Mexico City, I have recently moved back to Warsaw/Poland and I am looking for challenges here as a manager/architect/software engineer.
 
 I have been working for multiple media, communication and financial businesses over the last 12 years, managing teams of developers, building up and transforming the company culture, implementing modern methodologies, tools and practices.
 

@@ -29,3 +29,50 @@ code {
 .post-content ul ul, ul ol, ol ul, ol ol {
     margin: 4px 0 0 60px;
 }
+
+#top-line {
+    /*background-color: #000;*/
+    border-top: 4px solid #F03838;
+
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    margin-bottom: 48px;
+}
+
+#top-line header {
+    margin: 0 auto;
+    max-width: 889px;
+}
+
+#top-line .container {
+    padding: 0 40px;
+    /*background-color: lime;*/
+    /*marign: 0 40px;*/
+}
+
+#top-line .site-header {
+    padding: 0;
+}
+
+#top-line .site-nav {
+    margin: 0;
+    padding-top: 6px;
+}
+
+#top-line .site-title-wrapper {
+    float: left;
+}
+
+#top-line .site-community-links-wrapper {
+    float: right;
+}
+
+.post-date:after, .blog-description:after {
+    border-width: 0;
+}
+
+.post-header {
+    padding: 0;
+}
