@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webascrazy</title>
+    <link>https://webascrazy.net/tags/tools.xml</link>
+    <description>Recent content on Webascrazy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://webascrazy.net/tags/tools.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Add Docker autocompletion in your console</title>
+      <link>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-console/</link>
+      <pubDate>Thu, 02 Feb 2017 12:45:36 +0100</pubDate>
+      
+      <guid>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-console/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer&lt;/em&gt;: I am assuming that you are using macOS with bash, and Homebrew package manager.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am a big fan of Docker 🐳, I use it for all my projects at the moment; for experiments with a single container as well as for more complex architectures for production systems.&lt;/p&gt;
+
+&lt;p&gt;Working with many Docker images and containers during the set-up phase, often requires typing many Docker commands. To speed this process up, you can use code completion!&lt;/p&gt;
+
+&lt;h2 id=&#34;bash-completion&#34;&gt;Bash-completion&lt;/h2&gt;
+
+&lt;p&gt;To use completion scripts, you need &lt;code&gt;bash-completion&lt;/code&gt; installed on your system. To install it, I suggest using &lt;code&gt;Homebrew&lt;/code&gt; (get &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew install bash-completion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bash-completion is a programmable tool that comes with autocompletion configured for many popular tools (&lt;code&gt;ls -la /usr/local/etc/bash_completion.d&lt;/code&gt; to see the list). After the installation it is crucial to do what Homebrew told you to do, add&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+[ -f /usr/local/etc/bash_completion ] &amp;amp;&amp;amp; . /usr/local/etc/bash_completion
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;to your &lt;code&gt;/.bash_profile&lt;/code&gt; file (this will initiate the bash-completion script when you log-in).&lt;/p&gt;
+
+&lt;h2 id=&#34;autocompletion-scripts-for-docker&#34;&gt;Autocompletion scripts for Docker&lt;/h2&gt;
+
+&lt;p&gt;Now, add the completion script for &lt;code&gt;docker&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker &amp;gt; `brew --prefix`/etc/bash_completion.d/docker
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It will put the scripts in bash-completion scripts directory.&lt;/p&gt;
+
+&lt;h2 id=&#34;autocompletion-script-for-docker-compose&#34;&gt;Autocompletion script for docker-compose&lt;/h2&gt;
+
+&lt;p&gt;Do the same for &lt;code&gt;docker-compose&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; sudo curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docke-compose -o `brew --prefix`/etc/bash_completion.d/docker-compose
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Remember&lt;/em&gt;: you need logout and login to the shell again, before the scripts start working.&lt;/p&gt;
+
+&lt;h2 id=&#34;autocompletion-script-for-docker-machine&#34;&gt;Autocompletion script for docker-machine&lt;/h2&gt;
+
+&lt;p&gt;Do the same for &lt;code&gt;docker-machine&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;files=(docker-machine docker-machine-wrapper docker-machine-prompt)
+for f in &amp;quot;${files[@]}&amp;quot;; do
+  curl -L https://raw.githubusercontent.com/docker/machine/v$(docker-machine --version | tr -ds &#39;,&#39; &#39; &#39; | awk &#39;NR==1{print $(3)}&#39;)/contrib/completion/bash/$f.bash &amp;gt; `brew --prefix`/etc/bash_completion.d/$f
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;autocompletion&#34;&gt;Autocompletion&lt;/h2&gt;
+
+&lt;p&gt;Autocompletion works for &lt;code&gt;docker&lt;/code&gt;, &lt;code&gt;docker-compose&lt;/code&gt; commands as well as existing image names, network and container names, which very helpful!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

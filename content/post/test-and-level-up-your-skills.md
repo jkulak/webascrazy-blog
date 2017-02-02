@@ -12,16 +12,17 @@ Understanding new paradigms, learning new tricks and languages feature, lets you
 
 Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.
 
-## Table of contents 
+## Table of contents
 
 1. [Programming](#programming)
 2. [Security](#security)
 3. [Other](#other)
 
 ## Programming
-- https://www.codewars.com - play Codewars to solve 5-30min tasks in one of many languages (JavaScript, PHP, Python, BASH, Haskell, Swift, SQL, Dart, C, Rust and many others). Great user intrface (sometimes the websites feels slow). Lets me practice languages that I am not currently using in my projects
-- https://codegolf.stackexchange.com - it is called "golf", because the solutions to given problems should be as short as possible - in any language possible (there were even languages created for this particular purpose). Read it to learn about new languages, new languages features, approaches and possibilities. Just have in mind that, the solutions for most problems there are not considered "best practices" (mostly because of the unreadability)
-- https://www.khanacademy.org - is a non-profit educational organization with a great website. I used it to refresh my data data structures and algorithms knowledge. There are several courses to learn about JavaScript (gaming, drawing and animations and AI: natural simulations), as well as cryptography and information theory
+-   <https://www.codewars.com> - play Codewars to solve 5-30min tasks in one of many languages (JavaScript, PHP, Python, BASH, Haskell, Swift, SQL, Dart, C, Rust and many others). Great user intrface (sometimes the websites feels slow). Lets me practice languages that I am not currently using in my projects
+-   <https://codegolf.stackexchange.com> - it is called "golf", because the solutions to given problems should be as short as possible - in any language possible (there were even languages created for this particular purpose). Read it to learn about new languages, new languages features, approaches and possibilities. Just have in mind that, the solutions for most problems there are not considered "best practices" (mostly because of the unreadability)
+-   <https://www.khanacademy.org> - is a non-profit educational organization with a great website. I used it to refresh my data data structures and algorithms knowledge. There are several courses to learn about JavaScript (gaming, drawing and animations and AI: natural simulations), as well as cryptography and information theory
+-   <https://leetcode.com/> - similar to CodeWars, it will let you solve different programming tasks, that might be asked during interviews. Currently, they support 9 programming langugages: C, C++, Java, Python, C#, JavaScript, Ruby, Bash, MySQL. It will also let you mock interviews, where you have limited time to provide the answer in programming language of your choice.
 
 ### JavaScript
 - https://javascript30.com - 31, short, *great* videos from the amazing [Wes Bos](https://twitter.com/wesbos) that will teach you (remind you of) many JavaScript features and capabilities, as well as programming tricks. Apart from many JavaScript features, I have learned `console.table(some_variable);` to display you variables in a form of a table in the browser console 😳

@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Grow and test your developer skills &middot; Jakub Kułak</title>
-        <meta name="description" content="List of valuable resources to help you evolve your programming skills">
+        <title>Add Docker autocompletion in your console &middot; Jakub Kułak</title>
+        <meta name="description" content="How to install auto completion for your console and speed up interactions with Docker">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.17" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Grow and test your developer skills">
-<meta property="og:description" content="List of valuable resources to help you evolve your programming skills">
+        <meta property="og:title" content="Add Docker autocompletion in your console">
+<meta property="og:description" content="How to install auto completion for your console and speed up interactions with Docker">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://webascrazy.net/2017/01/16/grow-and-test-your-developer-skills/">
+<meta property="og:url" content="https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-console/">
         <link rel="stylesheet" href="https://webascrazy.net/css/normalize.css">
         <link rel="stylesheet" href="https://webascrazy.net/css/highlight.css">
         <link rel="stylesheet" href="https://webascrazy.net/css/style.css">
@@ -96,12 +96,12 @@ ga('send', 'pageview');
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Grow and test your developer skills</h1>
+    <h1 class="post-title" itemprop="name headline">Add Docker autocompletion in your console</h1>
     
-        <p class="post-description" itemprop="description">List of valuable resources to help you evolve your programming skills</p>
+        <p class="post-description" itemprop="description">How to install auto completion for your console and speed up interactions with Docker</p>
     
     <p class="post-date">
-        <span>Published <time datetime="2017-01-16" itemprop="datePublished">Mon, Jan 16, 2017</time></span>
+        <span>Published <time datetime="2017-02-02" itemprop="datePublished">Thu, Feb 2, 2017</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -116,53 +116,60 @@ ga('send', 'pageview');
 
     
 
-<p>Technology changes daily. New frameworks, tools and programming languages emerge on weekly basis. It is not possible to keep up with everything, but it is important to stay sharp and understand the trends, learn new approaches and paradigms to become a better programmer and problem solver. It is the key in our business to keep your finger on the pulse.</p>
+<blockquote>
+<p><em>Disclaimer</em>: I am assuming that you are using macOS with bash, and Homebrew package manager.</p>
+</blockquote>
 
-<p>Understanding new paradigms, learning new tricks and languages feature, lets you see the problems from different perspectives, and gives you the opportunity, to apply the best fit solution.</p>
+<p>I am a big fan of Docker 🐳, I use it for all my projects at the moment; for experiments with a single container as well as for more complex architectures for production systems.</p>
 
-<p>Below you will find a list of websites that I use and I am a fan of that help me stay on top, and constantly learn something new. When time allows, I use either of them daily, to finish at least one challenge. I will expand the list as I approach new, interesting services - also, comments are welcome.</p>
+<p>Working with many Docker images and containers during the set-up phase, often requires typing many Docker commands. To speed this process up, you can use code completion!</p>
 
-<h2 id="table-of-contents">Table of contents</h2>
+<h2 id="bash-completion">Bash-completion</h2>
 
-<ol>
-<li><a href="#programming">Programming</a></li>
-<li><a href="#security">Security</a></li>
-<li><a href="#other">Other</a></li>
-</ol>
+<p>To use completion scripts, you need <code>bash-completion</code> installed on your system. To install it, I suggest using <code>Homebrew</code> (get <a href="http://brew.sh/">Homebrew</a>).</p>
 
-<h2 id="programming">Programming</h2>
+<pre><code class="language-bash">brew install bash-completion
+</code></pre>
 
-<ul>
-<li><a href="https://www.codewars.com">https://www.codewars.com</a> - play Codewars to solve 5-30min tasks in one of many languages (JavaScript, PHP, Python, BASH, Haskell, Swift, SQL, Dart, C, Rust and many others). Great user intrface (sometimes the websites feels slow). Lets me practice languages that I am not currently using in my projects</li>
-<li><a href="https://codegolf.stackexchange.com">https://codegolf.stackexchange.com</a> - it is called &ldquo;golf&rdquo;, because the solutions to given problems should be as short as possible - in any language possible (there were even languages created for this particular purpose). Read it to learn about new languages, new languages features, approaches and possibilities. Just have in mind that, the solutions for most problems there are not considered &ldquo;best practices&rdquo; (mostly because of the unreadability)</li>
-<li><a href="https://www.khanacademy.org">https://www.khanacademy.org</a> - is a non-profit educational organization with a great website. I used it to refresh my data data structures and algorithms knowledge. There are several courses to learn about JavaScript (gaming, drawing and animations and AI: natural simulations), as well as cryptography and information theory</li>
-<li><a href="https://leetcode.com/">https://leetcode.com/</a> - similar to CodeWars, it will let you solve different programming tasks, that might be asked during interviews. Currently, they support 9 programming langugages: C, C++, Java, Python, C#, JavaScript, Ruby, Bash, MySQL. It will also let you mock interviews, where you have limited time to provide the answer in programming language of your choice.</li>
-</ul>
+<p>Bash-completion is a programmable tool that comes with autocompletion configured for many popular tools (<code>ls -la /usr/local/etc/bash_completion.d</code> to see the list). After the installation it is crucial to do what Homebrew told you to do, add</p>
 
-<h3 id="javascript">JavaScript</h3>
+<p><code>
+[ -f /usr/local/etc/bash_completion ] &amp;&amp; . /usr/local/etc/bash_completion
+</code></p>
 
-<ul>
-<li><a href="https://javascript30.com">https://javascript30.com</a> - 31, short, <em>great</em> videos from the amazing <a href="https://twitter.com/wesbos">Wes Bos</a> that will teach you (remind you of) many JavaScript features and capabilities, as well as programming tricks. Apart from many JavaScript features, I have learned <code>console.table(some_variable);</code> to display you variables in a form of a table in the browser console 😳</li>
-</ul>
+<p>to your <code>/.bash_profile</code> file (this will initiate the bash-completion script when you log-in).</p>
 
-<h3 id="css">CSS</h3>
+<h2 id="autocompletion-scripts-for-docker">Autocompletion scripts for Docker</h2>
 
-<ul>
-<li><a href="https://flexbox.io/">https://flexbox.io/</a> - What the Flexbox? Learn the CSS flexbox model watching short, and to the point videos from <a href="https://twitter.com/wesbos">Wes Bos</a> - check Wes&rsquo;s profile to find even more series to learn other stuff!</li>
-<li><a href="https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/">scotch.io flexbox visual guide</a> - play with flexbox proeprties using an on-line form</li>
-</ul>
+<p>Now, add the completion script for <code>docker</code></p>
 
-<h2 id="security">Security</h2>
+<pre><code class="language-bash">curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker &gt; `brew --prefix`/etc/bash_completion.d/docker
+</code></pre>
 
-<ul>
-<li><a href="http://overthewire.org/wargames/">http://overthewire.org/wargames/</a> - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to <a href="https://www.wechall.net/">https://www.wechall.net/</a> to set-up an account and see your progress in several &ldquo;hacking&rdquo; games as well as see a huge list of other &ldquo;hacking&rdquo; games</li>
-</ul>
+<p>It will put the scripts in bash-completion scripts directory.</p>
 
-<h2 id="other">Other</h2>
+<h2 id="autocompletion-script-for-docker-compose">Autocompletion script for docker-compose</h2>
 
-<ul>
-<li><a href="https://github.com/jwasham/google-interview-university">https://github.com/jwasham/google-interview-university</a> - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview</li>
-</ul>
+<p>Do the same for <code>docker-compose</code></p>
+
+<pre><code class="language-bash"> sudo curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docke-compose -o `brew --prefix`/etc/bash_completion.d/docker-compose
+</code></pre>
+
+<p><em>Remember</em>: you need logout and login to the shell again, before the scripts start working.</p>
+
+<h2 id="autocompletion-script-for-docker-machine">Autocompletion script for docker-machine</h2>
+
+<p>Do the same for <code>docker-machine</code></p>
+
+<pre><code class="language-bash">files=(docker-machine docker-machine-wrapper docker-machine-prompt)
+for f in &quot;${files[@]}&quot;; do
+  curl -L https://raw.githubusercontent.com/docker/machine/v$(docker-machine --version | tr -ds ',' ' ' | awk 'NR==1{print $(3)}')/contrib/completion/bash/$f.bash &gt; `brew --prefix`/etc/bash_completion.d/$f
+done
+</code></pre>
+
+<h2 id="autocompletion">Autocompletion</h2>
+
+<p>Autocompletion works for <code>docker</code>, <code>docker-compose</code> commands as well as existing image names, network and container names, which very helpful!</p>
 
 </div>
 
@@ -171,27 +178,29 @@ ga('send', 'pageview');
         <p class="post-tags">
             <span>Tagged:</span>
             
-                 <a href="/tags/programming/">programming</a>
+                 <a href="/tags/docker/">docker</a>
             
-                 <a href="/tags/learning/">learning</a>
+                 <a href="/tags/tools/">tools</a>
+            
+                 <a href="/tags/development/">development</a>
             
         </p>
     
 
     <div class="share">
-        <a class="icon-twitter" href="https://twitter.com/share?text=Grow%20and%20test%20your%20developer%20skills&url=https%3a%2f%2fwebascrazy.net%2f2017%2f01%2f16%2fgrow-and-test-your-developer-skills%2f"
+        <a class="icon-twitter" href="https://twitter.com/share?text=Add%20Docker%20autocompletion%20in%20your%20console&url=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-console%2f"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <i class="fa fa-twitter"></i>
             <span class="hidden">Twitter</span>
         </a>
 
-        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwebascrazy.net%2f2017%2f01%2f16%2fgrow-and-test-your-developer-skills%2f"
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-console%2f"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <i class="fa fa-facebook"></i>
             <span class="hidden">Facebook</span>
         </a>
 
-        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fwebascrazy.net%2f2017%2f01%2f16%2fgrow-and-test-your-developer-skills%2f"
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-console%2f"
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
            <i class="fa fa-google-plus"></i>
             <span class="hidden">Google+</span>
@@ -204,9 +213,9 @@ ga('send', 'pageview');
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'webascrazy';
-    var disqus_identifier = 'https:\/\/webascrazy.net\/2017\/01\/16\/grow-and-test-your-developer-skills\/';
-    var disqus_title = 'Grow and test your developer skills';
-    var disqus_url = 'https:\/\/webascrazy.net\/2017\/01\/16\/grow-and-test-your-developer-skills\/';
+    var disqus_identifier = 'https:\/\/webascrazy.net\/2017\/02\/02\/add-docker-autocompletion-in-your-console\/';
+    var disqus_title = 'Add Docker autocompletion in your console';
+    var disqus_url = 'https:\/\/webascrazy.net\/2017\/02\/02\/add-docker-autocompletion-in-your-console\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
