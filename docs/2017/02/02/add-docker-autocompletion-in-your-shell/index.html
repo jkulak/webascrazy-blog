@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Add Docker autocompletion in your shell &middot; Jakub Kułak</title>
+        <meta name="description" content="How to install auto completion for your shell and speed up interactions with Docker">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.17" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Add Docker autocompletion in your shell">
+<meta property="og:description" content="How to install auto completion for your shell and speed up interactions with Docker">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-shell/">
+        <link rel="stylesheet" href="https://webascrazy.net/css/normalize.css">
+        <link rel="stylesheet" href="https://webascrazy.net/css/highlight.css">
+        <link rel="stylesheet" href="https://webascrazy.net/css/style.css">
+        <link rel="stylesheet" href="https://webascrazy.net/css/customization.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1856754-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        <div id="top-line">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Webascrazy" href="https://webascrazy.net/">Webascrazy</a>
+                            </h1>
+                        
+                    </div>
+                    <div class="site-community-links-wrapper">
+                        <a class="button-square" href="https://webascrazy.net/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/jakub_kulak">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/jkulak">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/576372/jkulak">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/jakubkulak/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Google+" title="Google+" href="https://plus.google.com/117611095722064018816">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About me" href="/page/about-me.html">About me</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div id="wrapper">
+
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Add Docker autocompletion in your shell</h1>
+    
+        <p class="post-description" itemprop="description">How to install auto completion for your shell and speed up interactions with Docker</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2017-02-02" itemprop="datePublished">Thu, Feb 2, 2017</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="" itemprop="url" rel="author">Jakub Kułak</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<blockquote>
+<p><em>Disclaimer</em>: I am assuming that you are using macOS with bash, and Homebrew package manager.</p>
+</blockquote>
+
+<p>I am a big fan of Docker 🐳, I use it for all my projects at the moment; for experiments with a single container as well as for more complex architectures for production systems.</p>
+
+<p>Working with many Docker images and containers during the set-up phase, often requires typing many Docker commands. To speed this process up, you can use code completion!</p>
+
+<h2 id="bash-completion">Bash-completion</h2>
+
+<p>To use completion scripts, you need <code>bash-completion</code> installed on your system. To install it, I suggest using <code>Homebrew</code> (get <a href="http://brew.sh/">Homebrew</a>).</p>
+
+<pre><code class="language-bash">brew install bash-completion
+</code></pre>
+
+<p>Bash-completion is a programmable tool that comes with autocompletion configured for many popular tools (<code>ls -la /usr/local/etc/bash_completion.d</code> to see the list). After the installation it is crucial to do what Homebrew told you to do, add</p>
+
+<p><code>
+[ -f /usr/local/etc/bash_completion ] &amp;&amp; . /usr/local/etc/bash_completion
+</code></p>
+
+<p>to your <code>/.bash_profile</code> file (this will initiate the bash-completion script when you log-in).</p>
+
+<h2 id="autocompletion-scripts-for-docker">Autocompletion scripts for Docker</h2>
+
+<p>Now, add the completion script for <code>docker</code></p>
+
+<pre><code class="language-bash">curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker &gt; `brew --prefix`/etc/bash_completion.d/docker
+</code></pre>
+
+<p>It will put the scripts in bash-completion scripts directory.</p>
+
+<h2 id="autocompletion-script-for-docker-compose">Autocompletion script for docker-compose</h2>
+
+<p>Do the same for <code>docker-compose</code></p>
+
+<pre><code class="language-bash"> sudo curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docke-compose -o `brew --prefix`/etc/bash_completion.d/docker-compose
+</code></pre>
+
+<p><em>Remember</em>: you need logout and login to the shell again, before the scripts start working.</p>
+
+<h2 id="autocompletion-script-for-docker-machine">Autocompletion script for docker-machine</h2>
+
+<p>Do the same for <code>docker-machine</code></p>
+
+<pre><code class="language-bash">files=(docker-machine docker-machine-wrapper docker-machine-prompt)
+for f in &quot;${files[@]}&quot;; do
+  curl -L https://raw.githubusercontent.com/docker/machine/v$(docker-machine --version | tr -ds ',' ' ' | awk 'NR==1{print $(3)}')/contrib/completion/bash/$f.bash &gt; `brew --prefix`/etc/bash_completion.d/$f
+done
+</code></pre>
+
+<h2 id="autocompletion">Autocompletion</h2>
+
+<p>Autocompletion works for <code>docker</code>, <code>docker-compose</code> commands as well as existing image names, network and container names, which very helpful!</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+                 <a href="/tags/docker/">docker</a>
+            
+                 <a href="/tags/tools/">tools</a>
+            
+                 <a href="/tags/development/">development</a>
+            
+        </p>
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="https://twitter.com/share?text=Add%20Docker%20autocompletion%20in%20your%20shell&url=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-shell%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-shell%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fwebascrazy.net%2f2017%2f02%2f02%2fadd-docker-autocompletion-in-your-shell%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'webascrazy';
+    var disqus_identifier = 'https:\/\/webascrazy.net\/2017\/02\/02\/add-docker-autocompletion-in-your-shell\/';
+    var disqus_title = 'Add Docker autocompletion in your shell';
+    var disqus_url = 'https:\/\/webascrazy.net\/2017\/02\/02\/add-docker-autocompletion-in-your-shell\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Webascrazy" href="https://webascrazy.net/">Webascrazy</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://webascrazy.net/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="https://webascrazy.net/js/jquery.fitvids.js"></script>
+        <script src="https://webascrazy.net/js/scripts.js"></script>
+    </body>
+</html>
+

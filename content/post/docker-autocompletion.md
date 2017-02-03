@@ -1,8 +1,8 @@
 +++
 date = "2017-02-02T12:45:36+01:00"
 tags = ["docker", "tools", "development"]
-title = "Add Docker autocompletion in your console"
-description = "How to install auto completion for your console and speed up interactions with Docker"
+title = "Add Docker autocompletion in your shell"
+description = "How to install auto completion for your shell and speed up interactions with Docker"
 author = ""
 
 +++

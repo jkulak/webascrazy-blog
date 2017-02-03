@@ -9,11 +9,11 @@
     <atom:link href="https://webascrazy.net/tags/development.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Add Docker autocompletion in your console</title>
-      <link>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-console/</link>
+      <title>Add Docker autocompletion in your shell</title>
+      <link>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-shell/</link>
       <pubDate>Thu, 02 Feb 2017 12:45:36 +0100</pubDate>
       
-      <guid>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-console/</guid>
+      <guid>https://webascrazy.net/2017/02/02/add-docker-autocompletion-in-your-shell/</guid>
       <description>
 
 &lt;blockquote&gt;
