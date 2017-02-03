@@ -38,7 +38,7 @@
 [ -f /usr/local/etc/bash_completion ] &amp;amp;&amp;amp; . /usr/local/etc/bash_completion
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;to your &lt;code&gt;/.bash_profile&lt;/code&gt; file (this will initiate the bash-completion script when you log-in).&lt;/p&gt;
+&lt;p&gt;to your &lt;code&gt;${HOME}/.bash_profile&lt;/code&gt; file (this will initiate the bash-completion script when you log-in).&lt;/p&gt;
 
 &lt;h2 id=&#34;autocompletion-scripts-for-docker&#34;&gt;Autocompletion scripts for Docker&lt;/h2&gt;
 
@@ -70,7 +70,7 @@ done
 
 &lt;h2 id=&#34;autocompletion&#34;&gt;Autocompletion&lt;/h2&gt;
 
-&lt;p&gt;Autocompletion works for &lt;code&gt;docker&lt;/code&gt;, &lt;code&gt;docker-compose&lt;/code&gt; commands as well as existing image names, network and container names, which very helpful!&lt;/p&gt;
+&lt;p&gt;Autocompletion works for &lt;code&gt;docker&lt;/code&gt;, &lt;code&gt;docker-compose&lt;/code&gt;, &lt;code&gt;docker-machine&lt;/code&gt; commands as well as existing image names, network and container names, which in the end saves you lots of time!&lt;/p&gt;
 </description>
     </item>
     

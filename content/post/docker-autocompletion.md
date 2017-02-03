@@ -27,7 +27,7 @@ Bash-completion is a programmable tool that comes with autocompletion configured
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 `
 
-to your `/.bash_profile` file (this will initiate the bash-completion script when you log-in).
+to your `${HOME}/.bash_profile` file (this will initiate the bash-completion script when you log-in).
 
 ## Autocompletion scripts for Docker
 
@@ -62,4 +62,4 @@ done
 
 ## Autocompletion
 
-Autocompletion works for `docker`, `docker-compose` commands as well as existing image names, network and container names, which very helpful!
+Autocompletion works for `docker`, `docker-compose`, `docker-machine` commands as well as existing image names, network and container names, which in the end saves you lots of time!
