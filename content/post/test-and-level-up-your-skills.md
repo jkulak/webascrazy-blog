@@ -33,7 +33,11 @@ Below you will find a list of websites that I use and I am a fan of that help me
 
 ## Security
 
-- http://overthewire.org/wargames/ - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to https://www.wechall.net/ to set-up an account and see your progress in several "hacking" games as well as see a huge list of other "hacking" games
+-   <http://overthewire.org/wargames/> - Wargames let you learn and practice security concepts in the form of fun-filled games. Use it to level up you shell scripting skills and get to know new tools. Go to <https://www.wechall.net/> to set-up an account and see your progress in several "hacking" games as well as see a huge list of other "hacking" games
 
 ## Other
-- https://github.com/jwasham/google-interview-university - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview
+-   <https://github.com/jwasham/google-interview-university> - trending on GitHub since several months, a huge repository of learnign resources (from computer science basics to advanced topics), from John Washam that created it in a form of a todo list for his process of preparation for a Google job interview
+
+### Newsletters
+
+-   <https://stackshare.io/> - the best general IT newsletter I found so far. Delivers updates from the biggest tech blogs, news about new tools and tech stacks, weekly. The only one that I actually ready 100% (or close).
