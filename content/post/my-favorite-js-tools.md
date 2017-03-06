@@ -7,11 +7,11 @@ title = "my favorite js tools"
 draft = true
 +++
 
-- https://jsperf.com/
-- jsfiddle.net/
-- http://requestb.in/
-- https://regex101.com/
-- http://jsbin.com/?html,css,js,console,output
+-   <https://jsperf.com/>
+-   jsfiddle.net/
+-   http://requestb.in/
+-   https://regex101.com/
+-   http://jsbin.com/?html,css,js,console,output
 
 css bonus
 

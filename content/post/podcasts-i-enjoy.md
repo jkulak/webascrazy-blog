@@ -5,7 +5,7 @@ description = "List of podcasts abotu technology and science, that I listen to a
 date = "2017-03-04T15:39:40-06:00"
 +++
 
-I am listening to a lot of podcasts - usually while jogging, playing Playstation games, commuting, taking a longer walk. Couple of years ago I think I was able to listed to a podcast while programming - but now I find it difficult to focus on programming while still keeping track of what is going on in the podcast.
+I am listening to a lot of podcasts - usually while jogging, playing Playstation games, commuting, taking a longer walk. Couple of years ago I was able to listen to a podcast while programming - but now I find it difficult to focus on programming while still keeping track of what is going on in the podcast.
 
 What I am looking for in the podcasts:
 
@@ -25,8 +25,6 @@ I use "Overcast" application on my phone and <https://overcast.fm> website when 
 -   [RadioLab](https://overcast.fm/itunes152249110/radiolab) - hosted by the great [Robert Krulwich](https://twitter.com/rkrulwich) and [Jad Abumard](https://twitter.com/JadAbumrad) with many interesting co-hosts and guests joining the show. Radiolab is a show about curiosity and science. Where sound illuminates ideas, and the boundaries blur between science, philosophy, and human experience.
 -   [Clockwise](https://overcast.fm/+DjLMCSoI0) - Four people, four topics, 30 minutes. Clockwise focusses on technology topcis, with commentary presented from different perspectives.
 
-? Science Friday
-
 ## Podcasts about programming
 
 -   [Programming Throwdown](https://overcast.fm/itunes427166321/programming-throwdown) - ~70-minute long episodes focusing on different programing languages and frameworks - amazing source of knowledge in case you want to learn more about paradigms, tools, langauges, and approaches that are popular among programmers using languages that you do not know. Hosted by Patrick Wheeler and Jason Gauci.
@@ -38,4 +36,4 @@ I use "Overcast" application on my phone and <https://overcast.fm> website when 
 -   [Econtalk](https://overcast.fm/+JA3W37I) - economics-focused podcast hosted by [Russel Roberts](https://twitter.com/EconTalker), often with great guests to discuss economics topics.
 -   [Science Friday](https://overcast.fm/itunes73329284/science-friday) - Covering the outer reaches of space to the tiniest microbes in our bodies, Science Friday is the source for entertaining and educational stories about science, technology, and other cool stuff.
 
-I will be updateing the list as soon as my preference change.
+I will be updating the list as soon as my preference change.
