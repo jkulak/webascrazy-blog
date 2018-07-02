@@ -32,4 +32,3 @@ I like to measure, analyze, learn and repeat.
 
 * Jakub Kułak, located in Warsaw, Poland
 * Email: jakub.kulak@gmail.com
-* Phone: +48 799 023 375
